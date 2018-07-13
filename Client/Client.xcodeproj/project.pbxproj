@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D03F5DF020F8E46D00ED8884 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DEF20F8E46D00ED8884 /* Blocks.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447320F52ADF00079494 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE447220F52ADF00079494 /* ClientTests.swift */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D03F5DEF20F8E46D00ED8884 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				D0DE448820F53B2100079494 /* Accounts.swift */,
+				D03F5DEF20F8E46D00ED8884 /* Blocks.swift */,
 			);
 			path = One;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0DE448720F53A8E00079494 /* ArkClient.swift in Sources */,
+				D03F5DF020F8E46D00ED8884 /* Blocks.swift in Sources */,
 				D0DE448D20F6941900079494 /* ArkError.swift in Sources */,
 				D0DE448920F53B2100079494 /* Accounts.swift in Sources */,
 			);
