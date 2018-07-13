@@ -19,84 +19,62 @@ class Blocks {
         }
     }
     
-    init(client: ArkClient) {
+    public init(client: ArkClient) {
         self.client = client
     }
     
     /// Retrieves the given block
-    func get(id: String, completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/get", parameters: ["id": id]).responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func get(id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/get", ["id": id], completionHandler: completionHandler)
     }
     
     /// Retrieves all blocks, based on the given filter parameter(s)
-    func all(parameters: [String: String], completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint, parameters: parameters).responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func all(parameters: [String: Any], completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint, parameters, completionHandler: completionHandler)
     }
     
     /// Retrieves the blockchain epoch
-    func epoch(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getEpoch").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func epoch(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getEpoch", [:], completionHandler: completionHandler)
     }
     
     /// Retrieves the blockchain height
-    func height(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getHeight").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func height(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getHeight", [:], completionHandler: completionHandler)
     }
     
     /// Retrieves the blockchain nethash
-    func nethash(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getNethash").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func nethash(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getNethash", [:], completionHandler: completionHandler)
     }
     
     /// Retrieves the transaction fee
-    func fee(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getFee").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func fee(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getFee", [:], completionHandler: completionHandler)
     }
     
     /// Retrieves the different network fees
-    func fees(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getFees").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func fees(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getFees", [:], completionHandler: completionHandler)
     }
     
     /// Retrieves the blockchain milestone
-    func milestone(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getMilestone").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func milestone(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getMilestone", [:], completionHandler: completionHandler)
     }
     
     /// Retrieves the blockchain reward
-    func reward(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getReward").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func reward(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getReward", [:], completionHandler: completionHandler)
     }
     
     /// Retrieves the blockchain supply
-    func supply(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getSupply").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func supply(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getSupply", [:], completionHandler: completionHandler)
     }
     
     /// Retrieves the blockchain status
-    func status(completionHandler: @escaping (Any) -> Void) {
-        Alamofire.request(endpoint + "/getStatus").responseJSON { response in
-            completionHandler(response.result.value!)
-        }
+    public func status(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        handleApiCall(endpoint + "/getStatus", [:], completionHandler: completionHandler)
     }
 }
