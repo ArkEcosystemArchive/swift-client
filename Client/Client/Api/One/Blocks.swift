@@ -29,7 +29,7 @@ class Blocks {
     }
     
     /// Retrieves all blocks, based on the given filter parameter(s)
-    public func all(parameters: [String: Any], completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+    public func all(parameters: [String: Any]? = nil, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
         handleApiCall(endpoint, parameters, completionHandler: completionHandler)
     }
     

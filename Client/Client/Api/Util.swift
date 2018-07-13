@@ -16,7 +16,7 @@ import Foundation
 ///   - url: the url to which the request is made
 ///   - parameters: a dictionary of additional parameters that are send along with the request
 ///   - completionHandler: function to handle the response
-func handleApiCall(_ url: String, _ parameters: [String: Any], completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+func handleApiCall(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
     Alamofire.request(url, parameters: parameters).responseJSON { response in
         print(response)
         if let json = response.result.value {
