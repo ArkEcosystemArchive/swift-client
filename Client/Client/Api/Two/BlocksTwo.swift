@@ -39,7 +39,7 @@ extension Two {
         
         /// Retrieves transactions for a given block
         public func transactions(ofBlock id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id, ["limit": limit, "page": page], completionHandler)
+            apiGetHandler(endpoint + "/" + id + "/transactions", ["limit": limit, "page": page], completionHandler)
         }
         
         /// Searches for a transaction
