@@ -23,6 +23,7 @@
 		D03F5E1120FAB93A00ED8884 /* PeersTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */; };
 		D03F5E1320FAB9BF00ED8884 /* Votes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* Votes.swift */; };
 		D03F5E1520FABF3E00ED8884 /* WalletsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */; };
+		D03F5E1920FAC1D900ED8884 /* TransactionsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447320F52ADF00079494 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE447220F52ADF00079494 /* ClientTests.swift */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,6 +75,7 @@
 		D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersTwo.swift; sourceTree = "<group>"; };
 		D03F5E1220FAB9BF00ED8884 /* Votes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Votes.swift; sourceTree = "<group>"; };
 		D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTwo.swift; sourceTree = "<group>"; };
+		D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTwo.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */,
 				D03F5E1220FAB9BF00ED8884 /* Votes.swift */,
 				D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */,
+				D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				D0DE448720F53A8E00079494 /* ArkClient.swift in Sources */,
 				D03F5E0420FA9A1F00ED8884 /* One.swift in Sources */,
 				D03F5DF020F8E46D00ED8884 /* BlocksOne.swift in Sources */,
+				D03F5E1920FAC1D900ED8884 /* TransactionsTwo.swift in Sources */,
 				D03F5E1120FAB93A00ED8884 /* PeersTwo.swift in Sources */,
 				D03F5DF220F908FC00ED8884 /* Util.swift in Sources */,
 				D03F5E0620FA9A4000ED8884 /* Two.swift in Sources */,
