@@ -10,16 +10,17 @@
 import Alamofire
 import Foundation
 
-/// ApiHandler alias
-typealias ApiHandler = (String, [String: Any]?, @escaping (Dictionary<String, Any>?) -> Void) -> Void
+/// ApiHandler aliases
+typealias ApiGetHandler = (String, [String: Any]?, @escaping (Dictionary<String, Any>?) -> Void) -> Void
+typealias ApiPostHandler = (String, [String: Any]?, [String: Any]?, @escaping (Dictionary<String, Any>?) -> Void) -> Void
 
-/// Utility function to properly handle the different API calls
+/// Handles api get requests
 ///
 /// - Parameters:
 ///   - url: the url to which the request is made
 ///   - parameters: a dictionary of additional parameters that are send along with the request
 ///   - completionHandler: function to handle the response
-func handleApiCall(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+func handleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
     Alamofire.request(url, parameters: parameters).responseJSON { response in
         if let json = response.result.value {
             completionHandler(json as? Dictionary<String, Any>)
@@ -27,4 +28,19 @@ func handleApiCall(_ url: String, _ parameters: [String: Any]?, completionHandle
             completionHandler(nil)
         }
     }
+}
+
+/// Handles api post requests
+func handleApiPost(_ url: String, _ parameters: [String: Any]?, _ body: [String: Any]?, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+    var urlComponents = URLComponents(string: url)!
+    
+    // Create our own url including the parameters
+    if let params = parameters {
+        var queryItems = [URLQueryItem]()
+        for (key, value) in params {
+            queryItems.append(URLQueryItem(name: key, value: String(describing: value)))
+        }
+        urlComponents.queryItems = queryItems
+    }
+    Alamofire.request(urlComponents, method: .post, parameters: body)
 }

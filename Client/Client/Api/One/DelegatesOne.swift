@@ -13,14 +13,14 @@ extension One {
     class Delegates {
         
         private let client: ArkClient
-        private let apiHandler: ApiHandler
+        private let apiHandler: ApiGetHandler
         private var endpoint: String {
             get {
                 return client.host + "/delegates"
             }
         }
         
-        public init(client: ArkClient, _ apiHandler: @escaping ApiHandler = handleApiCall) {
+        public init(client: ArkClient, _ apiHandler: @escaping ApiGetHandler = handleApiGet) {
             self.client = client
             self.apiHandler = apiHandler
         }
