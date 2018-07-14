@@ -102,5 +102,10 @@ extension Two {
         public func votes(byKey id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
             apiGetHandler("\(endpoint)/\(id)/votes", ["limit": limit, "page": page], completionHandler)
         }
+        
+        /// Searches for a wallet
+        public func search(body: [String: Any]?, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+            apiPostHandler("\(endpoint)/search", ["limit": limit, "page": page], body, completionHandler)
+        }
     }
 }
