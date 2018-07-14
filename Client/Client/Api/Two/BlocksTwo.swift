@@ -17,7 +17,7 @@ extension Two {
         private let apiPostHandler: ApiPostHandler
         private var endpoint: String {
             get {
-                return client.host + "/blocks"
+                return "\(client.host)/blocks"
             }
         }
         
@@ -29,7 +29,7 @@ extension Two {
         
         /// Retrieves the given block
         public func get(id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id, [:], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)", [:], completionHandler)
         }
         
         /// Retrieves all blocks
@@ -39,12 +39,12 @@ extension Two {
         
         /// Retrieves transactions for a given block
         public func transactions(ofBlock id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id + "/transactions", ["limit": limit, "page": page], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)/transactions", ["limit": limit, "page": page], completionHandler)
         }
         
         /// Searches for a transaction
         public func search(body: [String: Any]?, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiPostHandler(endpoint + "/search", ["limit": limit, "page": page], body, completionHandler)
+            apiPostHandler("\(endpoint)/search", ["limit": limit, "page": page], body, completionHandler)
         }
     }
 }

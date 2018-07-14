@@ -16,7 +16,7 @@ extension One {
         private let apiHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/peers"
+                return "\(client.host)/peers"
             }
         }
         
@@ -27,7 +27,7 @@ extension One {
         
         /// Retrieves a peer
         public func get(ip: String, port: Int, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/get", ["ip": ip, "port": port], completionHandler)
+            apiHandler("\(endpoint)/get", ["ip": ip, "port": port], completionHandler)
         }
         
         /// Retrieves all peers, based on the given filter parameter(s)
@@ -37,7 +37,7 @@ extension One {
         
         /// Retrieves the core version
         public func version(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/version", [:], completionHandler)
+            apiHandler("\(endpoint)/version", [:], completionHandler)
         }
     }
 }

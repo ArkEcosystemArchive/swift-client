@@ -16,7 +16,7 @@ extension Two {
         private let apiGetHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/node"
+                return "\(client.host)/node"
             }
         }
         
@@ -27,17 +27,17 @@ extension Two {
         
         /// Retrieves the status
         public func status(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/status", [:], completionHandler)
+            apiGetHandler("\(endpoint)/status", [:], completionHandler)
         }
         
         /// Retrieves the node syncing status
         public func syncing(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/syncing", [:], completionHandler)
+            apiGetHandler("\(endpoint)/syncing", [:], completionHandler)
         }
         
         /// Retrieves the configuration
         public func configuration(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/configuration", [:], completionHandler)
+            apiGetHandler("\(endpoint)/configuration", [:], completionHandler)
         }
     }
 }

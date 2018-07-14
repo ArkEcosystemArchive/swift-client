@@ -16,7 +16,7 @@ extension One {
         private let apiHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/signatures"
+                return "\(client.host)/signatures"
             }
         }
         
@@ -27,7 +27,7 @@ extension One {
         
         /// Retrieves the fee for a second signature
         public func fee(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/fee", [:], completionHandler)
+            apiHandler("\(endpoint)/fee", [:], completionHandler)
         }
     }
 }

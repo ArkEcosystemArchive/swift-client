@@ -16,7 +16,7 @@ extension Two {
         private let apiGetHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/peers"
+                return "\(client.host)/peers"
             }
         }
         
@@ -27,7 +27,7 @@ extension Two {
         
         /// Retrieves a peer
         public func status(ip: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + ip, [:], completionHandler)
+            apiGetHandler("\(endpoint)/\(ip)", [:], completionHandler)
         }
         
         /// Retrieves all peers

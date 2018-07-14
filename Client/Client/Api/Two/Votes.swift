@@ -16,7 +16,7 @@ extension Two {
         private let apiGetHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/votes"
+                return "\(client.host)/votes"
             }
         }
         
@@ -27,7 +27,7 @@ extension Two {
         
         /// Retrieves a vote
         public func status(id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id, [:], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)", [:], completionHandler)
         }
         
         /// Retrieves all votes

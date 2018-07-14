@@ -16,7 +16,7 @@ extension Two {
         private let apiGetHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/delegates"
+                return "\(client.host)/delegates"
             }
         }
         
@@ -28,15 +28,15 @@ extension Two {
         /// Retrieves the given delegate
         /// id can be one of: Username, Address or Public Key
         public func get(byName id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id, [:], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)", [:], completionHandler)
         }
         
         public func get(byAddress id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id, [:], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)", [:], completionHandler)
         }
         
         public func get(byKey id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id, [:], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)", [:], completionHandler)
         }
         
         /// Retrieves all delegates
@@ -46,28 +46,28 @@ extension Two {
         
         /// Retrieves all forged blocks of a given delegate
         public func blocks(byName id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id + "/blocks", ["limit": limit, "page": page], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)/blocks", ["limit": limit, "page": page], completionHandler)
         }
         
         public func blocks(byAddress id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id + "/blocks", ["limit": limit, "page": page], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)/blocks", ["limit": limit, "page": page], completionHandler)
         }
         
         public func blocks(byKey id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id + "/blocks", ["limit": limit, "page": page], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)/blocks", ["limit": limit, "page": page], completionHandler)
         }
         
         /// Retrieves all voters of a given delegate
         public func voters(byName id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id + "/voters", ["limit": limit, "page": page], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)/voters", ["limit": limit, "page": page], completionHandler)
         }
         
         public func voters(byAddress id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id + "/voters", ["limit": limit, "page": page], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)/voters", ["limit": limit, "page": page], completionHandler)
         }
         
         public func voters(byKey id: String, limit: Int = 20, page : Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiGetHandler(endpoint + "/" + id + "/voters", ["limit": limit, "page": page], completionHandler)
+            apiGetHandler("\(endpoint)/\(id)/voters", ["limit": limit, "page": page], completionHandler)
         }
     }
 }

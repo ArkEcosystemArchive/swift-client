@@ -16,7 +16,7 @@ extension One {
         private let apiHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/loader"
+                return "\(client.host)/loader"
             }
         }
         
@@ -27,17 +27,17 @@ extension One {
         
         /// Retrieves the status
         public func status(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/status", [:], completionHandler)
+            apiHandler("\(endpoint)/status", [:], completionHandler)
         }
         
         /// Retrieves the syncing status
         public func syncStatus(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/status/sync", [:], completionHandler)
+            apiHandler("\(endpoint)/status/sync", [:], completionHandler)
         }
         
         /// Retrieves the configuration
         public func autoconfigure(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/autoconfigure", [:], completionHandler)
+            apiHandler("\(endpoint)/autoconfigure", [:], completionHandler)
         }
     }
 }

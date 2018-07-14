@@ -16,7 +16,7 @@ extension One {
         private let apiHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/delegates"
+                return "\(client.host)/delegates"
             }
         }
         
@@ -27,32 +27,32 @@ extension One {
         
         /// Retrieves the given delegate by its public key
         public func get(byKey publicKey: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/get", ["publicKey": publicKey], completionHandler)
+            apiHandler("\(endpoint)/get", ["publicKey": publicKey], completionHandler)
         }
         
         /// Retrieves the given delegate by its username
         public func get(byName username: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/get", ["username": username], completionHandler)
+            apiHandler("\(endpoint)/get", ["username": username], completionHandler)
         }
         
         /// Retrieves the total count of registered delegates
         public func count(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/count", [:], completionHandler)
+            apiHandler("\(endpoint)/count", [:], completionHandler)
         }
         
         /// Retrieves the delegate registration fee
         public func fee(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/fee", [:], completionHandler)
+            apiHandler("\(endpoint)/fee", [:], completionHandler)
         }
         
         /// Retrieves the total amounts forged by a delegates
         public func forgedByAccount(withKey publicKey: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/forging/getForgedByAccount", ["generatorPublicKey": publicKey], completionHandler)
+            apiHandler("\(endpoint)/forging/getForgedByAccount", ["generatorPublicKey": publicKey], completionHandler)
         }
         
         /// Retrieves all voters of a delegates
         public func voters(publicKey: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/voters", ["publicKey": publicKey], completionHandler)
+            apiHandler("\(endpoint)/voters", ["publicKey": publicKey], completionHandler)
         }
         
         /// Retrieves all delegates
@@ -69,12 +69,12 @@ extension One {
                     params.updateValue(String(describing: value), forKey:key)
                 }
             }
-            apiHandler(endpoint + "/search", params, completionHandler)
+            apiHandler("\(endpoint)/search", params, completionHandler)
         }
         
         /// Retrieves a list of delegates that will forge next
         public func nextForgers(publicKey: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/getNextForgers", [:], completionHandler)
+            apiHandler("\(endpoint)/getNextForgers", [:], completionHandler)
         }
     }
 }

@@ -13,6 +13,8 @@ import XCTest
 
 class AccountsOneTest: XCTestCase {
     
+    // TODO: use expectations to properly handle async tests
+    
     private var accounts: One.Accounts?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {

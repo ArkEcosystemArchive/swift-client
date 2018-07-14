@@ -16,7 +16,7 @@ extension One {
         private let apiHandler: ApiGetHandler
         private var endpoint: String {
             get {
-                return client.host + "/transactions"
+                return "\(client.host)/transactions"
             }
         }
         
@@ -27,7 +27,7 @@ extension One {
         
         /// Retrieves a transaction
         public func get(id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/get", ["id": id], completionHandler)
+            apiHandler("\(endpoint)/get", ["id": id], completionHandler)
         }
         
         /// Retrieves all transactions, based on the given filter parameter(s)
@@ -37,12 +37,12 @@ extension One {
         
         /// Retrieves an unconfirmed transaction
         public func getUnconfirmed(id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/unconfirmed/get", ["id": id], completionHandler)
+            apiHandler("\(endpoint)/unconfirmed/get", ["id": id], completionHandler)
         }
         
         /// Retrieves all unconfirmed transactions, based on the given filter parameter(s)
         public func allUnconfirmed(parameters: [String: Any]? = nil, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-            apiHandler(endpoint + "/unconfirmed", parameters, completionHandler)
+            apiHandler("\(endpoint)/unconfirmed", parameters, completionHandler)
         }
     }
 }
