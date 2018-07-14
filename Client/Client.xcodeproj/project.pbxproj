@@ -14,10 +14,10 @@
 		D03F5DF820F92F4400ED8884 /* PeersOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF720F92F4400ED8884 /* PeersOne.swift */; };
 		D03F5DFA20F9311800ED8884 /* SignaturesOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF920F9311800ED8884 /* SignaturesOne.swift */; };
 		D03F5DFC20F931ED00ED8884 /* TransactionsOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DFB20F931ED00ED8884 /* TransactionsOne.swift */; };
-		D03F5DFE20FA79F700ED8884 /* AccountsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DFD20FA79F700ED8884 /* AccountsTest.swift */; };
-		D03F5E0020FA94E800ED8884 /* AccountsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DFF20FA94E800ED8884 /* AccountsTwo.swift */; };
+		D03F5DFE20FA79F700ED8884 /* AccountsOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DFD20FA79F700ED8884 /* AccountsOneTest.swift */; };
 		D03F5E0420FA9A1F00ED8884 /* One.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0320FA9A1F00ED8884 /* One.swift */; };
 		D03F5E0620FA9A4000ED8884 /* Two.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0520FA9A4000ED8884 /* Two.swift */; };
+		D03F5E0A20FAA4EA00ED8884 /* BlocksTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0920FAA4EA00ED8884 /* BlocksTwo.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447320F52ADF00079494 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE447220F52ADF00079494 /* ClientTests.swift */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,10 +60,10 @@
 		D03F5DF720F92F4400ED8884 /* PeersOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersOne.swift; sourceTree = "<group>"; };
 		D03F5DF920F9311800ED8884 /* SignaturesOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturesOne.swift; sourceTree = "<group>"; };
 		D03F5DFB20F931ED00ED8884 /* TransactionsOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsOne.swift; sourceTree = "<group>"; };
-		D03F5DFD20FA79F700ED8884 /* AccountsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTest.swift; sourceTree = "<group>"; };
-		D03F5DFF20FA94E800ED8884 /* AccountsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTwo.swift; sourceTree = "<group>"; };
+		D03F5DFD20FA79F700ED8884 /* AccountsOneTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsOneTest.swift; sourceTree = "<group>"; };
 		D03F5E0320FA9A1F00ED8884 /* One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = One.swift; sourceTree = "<group>"; };
 		D03F5E0520FA9A4000ED8884 /* Two.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Two.swift; sourceTree = "<group>"; };
+		D03F5E0920FAA4EA00ED8884 /* BlocksTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTwo.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D03F5E0720FAA0C800ED8884 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				D03F5E0820FAA0D000ED8884 /* One */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		D03F5E0820FAA0D000ED8884 /* One */ = {
+			isa = PBXGroup;
+			children = (
+				D03F5DFD20FA79F700ED8884 /* AccountsOneTest.swift */,
+			);
+			path = One;
+			sourceTree = "<group>";
+		};
 		D0DE445A20F52ADF00079494 = {
 			isa = PBXGroup;
 			children = (
@@ -130,9 +146,9 @@
 		D0DE447120F52ADF00079494 /* ClientTests */ = {
 			isa = PBXGroup;
 			children = (
+				D03F5E0720FAA0C800ED8884 /* Api */,
 				D0DE447220F52ADF00079494 /* ClientTests.swift */,
 				D0DE447420F52ADF00079494 /* Info.plist */,
-				D03F5DFD20FA79F700ED8884 /* AccountsTest.swift */,
 			);
 			path = ClientTests;
 			sourceTree = "<group>";
@@ -167,7 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				D03F5E0520FA9A4000ED8884 /* Two.swift */,
-				D03F5DFF20FA94E800ED8884 /* AccountsTwo.swift */,
+				D03F5E0920FAA4EA00ED8884 /* BlocksTwo.swift */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -283,9 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F5DFC20F931ED00ED8884 /* TransactionsOne.swift in Sources */,
+				D03F5E0A20FAA4EA00ED8884 /* BlocksTwo.swift in Sources */,
 				D0DE448720F53A8E00079494 /* ArkClient.swift in Sources */,
 				D03F5E0420FA9A1F00ED8884 /* One.swift in Sources */,
-				D03F5E0020FA94E800ED8884 /* AccountsTwo.swift in Sources */,
 				D03F5DF020F8E46D00ED8884 /* BlocksOne.swift in Sources */,
 				D03F5DF220F908FC00ED8884 /* Util.swift in Sources */,
 				D03F5E0620FA9A4000ED8884 /* Two.swift in Sources */,
@@ -303,7 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0DE447320F52ADF00079494 /* ClientTests.swift in Sources */,
-				D03F5DFE20FA79F700ED8884 /* AccountsTest.swift in Sources */,
+				D03F5DFE20FA79F700ED8884 /* AccountsOneTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

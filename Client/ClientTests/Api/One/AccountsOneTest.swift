@@ -11,7 +11,7 @@ import Foundation
 import XCTest
 @testable import Client
 
-class AccountsTest: XCTestCase {
+class AccountsOneTest: XCTestCase {
     
     private var accounts: One.Accounts?
     private let apiHost = "https://127.0.0.1:4003/api"
