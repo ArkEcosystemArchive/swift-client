@@ -22,6 +22,7 @@
 		D03F5E0F20FAB88D00ED8884 /* NodeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0E20FAB88D00ED8884 /* NodeTwo.swift */; };
 		D03F5E1120FAB93A00ED8884 /* PeersTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */; };
 		D03F5E1320FAB9BF00ED8884 /* Votes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* Votes.swift */; };
+		D03F5E1520FABF3E00ED8884 /* WalletsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447320F52ADF00079494 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE447220F52ADF00079494 /* ClientTests.swift */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +73,7 @@
 		D03F5E0E20FAB88D00ED8884 /* NodeTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTwo.swift; sourceTree = "<group>"; };
 		D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersTwo.swift; sourceTree = "<group>"; };
 		D03F5E1220FAB9BF00ED8884 /* Votes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Votes.swift; sourceTree = "<group>"; };
+		D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTwo.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				D03F5E0E20FAB88D00ED8884 /* NodeTwo.swift */,
 				D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */,
 				D03F5E1220FAB9BF00ED8884 /* Votes.swift */,
+				D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F5DFC20F931ED00ED8884 /* TransactionsOne.swift in Sources */,
+				D03F5E1520FABF3E00ED8884 /* WalletsTwo.swift in Sources */,
 				D03F5E1320FAB9BF00ED8884 /* Votes.swift in Sources */,
 				D03F5E0A20FAA4EA00ED8884 /* BlocksTwo.swift in Sources */,
 				D0DE448720F53A8E00079494 /* ArkClient.swift in Sources */,
