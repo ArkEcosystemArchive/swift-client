@@ -13,7 +13,7 @@ import XCTest
 
 class AccountsTest: XCTestCase {
     
-    private var accounts: Accounts?
+    private var accounts: One.Accounts?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
         get {
@@ -28,7 +28,7 @@ class AccountsTest: XCTestCase {
     override func setUp() {
         super.setUp()
         let client = ArkClient(host: apiHost, version: 1)
-        accounts = Accounts(client: client, mockHandleApiCall)
+        accounts = One.Accounts(client: client, mockHandleApiCall)
     }
     
     func testAccountsGet() {
