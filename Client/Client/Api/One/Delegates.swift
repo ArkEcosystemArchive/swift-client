@@ -11,50 +11,52 @@ import Foundation
 
 class Delegates {
     
-    let client: ArkClient
+    private let client: ArkClient
+    private let apiHandler: ApiHandler
     private var endpoint: String {
         get {
             return client.host + "/delegates"
         }
     }
     
-    public init(client: ArkClient) {
+    public init(client: ArkClient, _ apiHandler: @escaping ApiHandler = handleApiCall) {
         self.client = client
+        self.apiHandler = apiHandler
     }
     
     /// Retrieves the given delegate by its public key
     public func get(byKey publicKey: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/get", ["publicKey": publicKey], completionHandler: completionHandler)
+        apiHandler(endpoint + "/get", ["publicKey": publicKey], completionHandler)
     }
     
     /// Retrieves the given delegate by its username
     public func get(byName username: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/get", ["username": username], completionHandler: completionHandler)
+        apiHandler(endpoint + "/get", ["username": username], completionHandler)
     }
     
     /// Retrieves the total count of registered delegates
     public func count(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/count", [:], completionHandler: completionHandler)
+        apiHandler(endpoint + "/count", [:], completionHandler)
     }
     
     /// Retrieves the delegate registration fee
     public func fee(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/fee", [:], completionHandler: completionHandler)
+        apiHandler(endpoint + "/fee", [:], completionHandler)
     }
     
     /// Retrieves the total amounts forged by a delegates
     public func forgedByAccount(withKey publicKey: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/forging/getForgedByAccount", ["generatorPublicKey": publicKey], completionHandler: completionHandler)
+        apiHandler(endpoint + "/forging/getForgedByAccount", ["generatorPublicKey": publicKey], completionHandler)
     }
     
     /// Retrieves all voters of a delegates
     public func voters(publicKey: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/voters", ["publicKey": publicKey], completionHandler: completionHandler)
+        apiHandler(endpoint + "/voters", ["publicKey": publicKey], completionHandler)
     }
     
     /// Retrieves all delegates
     public func voters(parameters: [String: Any]? = nil, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint, parameters, completionHandler: completionHandler)
+        apiHandler(endpoint, parameters, completionHandler)
     }
     
     /// Retrieves delegates based on a search query
@@ -66,11 +68,11 @@ class Delegates {
                 params.updateValue(String(describing: value), forKey:key)
             }
         }
-        handleApiCall(endpoint + "/search", params, completionHandler: completionHandler)
+        apiHandler(endpoint + "/search", params, completionHandler)
     }
     
     /// Retrieves a list of delegates that will forge next
     public func nextForgers(publicKey: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/getNextForgers", [:], completionHandler: completionHandler)
+        apiHandler(endpoint + "/getNextForgers", [:], completionHandler)
     }
 }

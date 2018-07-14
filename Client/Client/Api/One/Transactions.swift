@@ -11,34 +11,36 @@ import Foundation
 
 class Transactions {
     
-    let client: ArkClient
+    private let client: ArkClient
+    private let apiHandler: ApiHandler
     private var endpoint: String {
         get {
             return client.host + "/transactions"
         }
     }
     
-    public init(client: ArkClient) {
+    public init(client: ArkClient, _ apiHandler: @escaping ApiHandler = handleApiCall) {
         self.client = client
+        self.apiHandler = apiHandler
     }
     
     /// Retrieves a transaction
     public func get(id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/get", ["id": id], completionHandler: completionHandler)
+        apiHandler(endpoint + "/get", ["id": id], completionHandler)
     }
     
     /// Retrieves all transactions, based on the given filter parameter(s)
     public func all(parameters: [String: Any]? = nil, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint, parameters, completionHandler: completionHandler)
+        apiHandler(endpoint, parameters, completionHandler)
     }
     
     /// Retrieves an unconfirmed transaction
     public func getUnconfirmed(id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/unconfirmed/get", ["id": id], completionHandler: completionHandler)
+        apiHandler(endpoint + "/unconfirmed/get", ["id": id], completionHandler)
     }
     
     /// Retrieves all unconfirmed transactions, based on the given filter parameter(s)
     public func allUnconfirmed(parameters: [String: Any]? = nil, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/unconfirmed", parameters, completionHandler: completionHandler)
+        apiHandler(endpoint + "/unconfirmed", parameters, completionHandler)
     }
 }

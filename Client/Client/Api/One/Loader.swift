@@ -11,29 +11,31 @@ import Foundation
 
 class Loader {
     
-    let client: ArkClient
+    private let client: ArkClient
+    private let apiHandler: ApiHandler
     private var endpoint: String {
         get {
             return client.host + "/loader"
         }
     }
     
-    public init(client: ArkClient) {
+    public init(client: ArkClient, _ apiHandler: @escaping ApiHandler = handleApiCall) {
         self.client = client
+        self.apiHandler = apiHandler
     }
     
     /// Retrieves the status
     public func status(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/status", [:], completionHandler: completionHandler)
+        apiHandler(endpoint + "/status", [:], completionHandler)
     }
     
     /// Retrieves the syncing status
     public func syncStatus(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/status/sync", [:], completionHandler: completionHandler)
+        apiHandler(endpoint + "/status/sync", [:], completionHandler)
     }
     
     /// Retrieves the configuration
     public func autoconfigure(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/autoconfigure", [:], completionHandler: completionHandler)
+        apiHandler(endpoint + "/autoconfigure", [:], completionHandler)
     }
 }

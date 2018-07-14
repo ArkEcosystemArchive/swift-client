@@ -11,29 +11,31 @@ import Foundation
 
 class Peers {
     
-    let client: ArkClient
+    private let client: ArkClient
+    private let apiHandler: ApiHandler
     private var endpoint: String {
         get {
             return client.host + "/peers"
         }
     }
     
-    public init(client: ArkClient) {
+    public init(client: ArkClient, _ apiHandler: @escaping ApiHandler = handleApiCall) {
         self.client = client
+        self.apiHandler = apiHandler
     }
     
     /// Retrieves a peer
     public func get(ip: String, port: Int, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/get", ["ip": ip, "port": port], completionHandler: completionHandler)
+        apiHandler(endpoint + "/get", ["ip": ip, "port": port], completionHandler)
     }
     
     /// Retrieves all peers, based on the given filter parameter(s)
     public func all(parameters: [String: Any]? = nil, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint, parameters, completionHandler: completionHandler)
+        apiHandler(endpoint, parameters, completionHandler)
     }
     
     /// Retrieves the core version
     public func version(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        handleApiCall(endpoint + "/version", [:], completionHandler: completionHandler)
+        apiHandler(endpoint + "/version", [:], completionHandler)
     }
 }

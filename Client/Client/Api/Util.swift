@@ -10,6 +10,9 @@
 import Alamofire
 import Foundation
 
+/// ApiHandler alias
+typealias ApiHandler = (String, [String: Any]?, @escaping (Dictionary<String, Any>?) -> Void) -> Void
+
 /// Utility function to properly handle the different API calls
 ///
 /// - Parameters:
@@ -18,7 +21,6 @@ import Foundation
 ///   - completionHandler: function to handle the response
 func handleApiCall(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
     Alamofire.request(url, parameters: parameters).responseJSON { response in
-        print(response)
         if let json = response.result.value {
             completionHandler(json as? Dictionary<String, Any>)
         } else {
