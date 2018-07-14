@@ -14,6 +14,7 @@
 		D03F5DF820F92F4400ED8884 /* Peers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF720F92F4400ED8884 /* Peers.swift */; };
 		D03F5DFA20F9311800ED8884 /* Signatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF920F9311800ED8884 /* Signatures.swift */; };
 		D03F5DFC20F931ED00ED8884 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DFB20F931ED00ED8884 /* Transactions.swift */; };
+		D03F5DFE20FA79F700ED8884 /* AccountsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DFD20FA79F700ED8884 /* AccountsTest.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447320F52ADF00079494 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE447220F52ADF00079494 /* ClientTests.swift */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,7 @@
 		D03F5DF720F92F4400ED8884 /* Peers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peers.swift; sourceTree = "<group>"; };
 		D03F5DF920F9311800ED8884 /* Signatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signatures.swift; sourceTree = "<group>"; };
 		D03F5DFB20F931ED00ED8884 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		D03F5DFD20FA79F700ED8884 /* AccountsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTest.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				D0DE447220F52ADF00079494 /* ClientTests.swift */,
 				D0DE447420F52ADF00079494 /* Info.plist */,
+				D03F5DFD20FA79F700ED8884 /* AccountsTest.swift */,
 			);
 			path = ClientTests;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0DE447320F52ADF00079494 /* ClientTests.swift in Sources */,
+				D03F5DFE20FA79F700ED8884 /* AccountsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
