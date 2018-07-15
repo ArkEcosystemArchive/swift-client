@@ -17,7 +17,7 @@ class AccountsOneTest: XCTestCase {
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
         get {
-            return apiHost + "/accounts"
+            return "\(apiHost)/accounts"
         }
     }
     
@@ -51,7 +51,7 @@ class AccountsOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getBalance")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getBalance")
         XCTAssert(parameters!["address"] as! String == "dummyAddress")
     }
     
@@ -65,7 +65,7 @@ class AccountsOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getPublicKey")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getPublicKey")
         XCTAssert(parameters!["address"] as! String == "dummyAddress")
     }
     
@@ -79,7 +79,7 @@ class AccountsOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/delegates")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/delegates")
         XCTAssert(parameters!["address"] as! String == "dummyAddress")
     }
     
@@ -93,7 +93,7 @@ class AccountsOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/delegates/fee")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/delegates/fee")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -107,7 +107,7 @@ class AccountsOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/top")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/top")
         XCTAssert(parameters!["limit"] as! Int == 40)
         XCTAssert(parameters!["offset"] as! Int == 0)
     }
@@ -122,7 +122,7 @@ class AccountsOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getAllAccounts")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getAllAccounts")
         XCTAssert(parameters!["limit"] as! Int == 40)
         XCTAssert(parameters!["offset"] as! Int == 0)
     }
@@ -137,7 +137,7 @@ class AccountsOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/count")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/count")
         XCTAssert(parameters!.count == 0)
     }
     

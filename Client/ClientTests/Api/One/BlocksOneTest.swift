@@ -17,7 +17,7 @@ class BlocksOneTest: XCTestCase {
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
         get {
-            return apiHost + "/blocks"
+            return "\(apiHost)/blocks"
         }
     }
     
@@ -66,7 +66,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getEpoch")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getEpoch")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -80,7 +80,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getHeight")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getHeight")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -94,7 +94,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getNethash")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getNethash")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -108,7 +108,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getFee")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getFee")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -122,7 +122,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getFees")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getFees")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -136,7 +136,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getMilestone")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getMilestone")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -150,7 +150,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getReward")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getReward")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -164,7 +164,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getSupply")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getSupply")
         XCTAssert(parameters!.count == 0)
     }
     
@@ -178,7 +178,7 @@ class BlocksOneTest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getStatus")
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getStatus")
         XCTAssert(parameters!.count == 0)
     }
     
