@@ -21,10 +21,6 @@ class AccountsOneTest: XCTestCase {
         }
     }
     
-    private func mockHandleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-        completionHandler(["url": url, "parameters": parameters])
-    }
-    
     override func setUp() {
         super.setUp()
         let client = ArkClient(host: apiHost, version: 1)
