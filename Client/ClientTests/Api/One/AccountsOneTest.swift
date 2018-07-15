@@ -13,8 +13,6 @@ import XCTest
 
 class AccountsOneTest: XCTestCase {
     
-    // TODO: use expectations to properly handle async tests
-    
     private var accounts: One.Accounts?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
@@ -34,69 +32,117 @@ class AccountsOneTest: XCTestCase {
     }
     
     func testAccountsGet() {
-        accounts?.get(address: "dummyAddress", completionHandler: { (response) in
-            let parameters = response!["parameters"] as! [String: Any]?
-            XCTAssert(response!["url"] as! String == self.apiEndpoint)
-            XCTAssert(parameters!["address"] as! String == "dummyAddress")
+        let expectation = self.expectation(description: "Get account")
+        var response: Dictionary<String, Any>?
+        accounts?.get(address: "dummyAddress", completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
         })
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == self.apiEndpoint)
+        XCTAssert(parameters!["address"] as! String == "dummyAddress")
     }
     
     func testAccountsBalance() {
-        accounts?.balance(of: "dummyAddress", completionHandler: { (response) in
-            let parameters = response!["parameters"] as! [String: Any]?
-            XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getBalance")
-            XCTAssert(parameters!["address"] as! String == "dummyAddress")
+        let expectation = self.expectation(description: "Get account balance")
+        var response: Dictionary<String, Any>?
+        accounts?.balance(of: "dummyAddress", completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
         })
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getBalance")
+        XCTAssert(parameters!["address"] as! String == "dummyAddress")
     }
     
     func testAccountsPublicKey() {
-        accounts?.publicKey(of: "dummyAddress", completionHandler: { (response) in
-            let parameters = response!["parameters"] as! [String: Any]?
-            XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getPublicKey")
-            XCTAssert(parameters!["address"] as! String == "dummyAddress")
+        let expectation = self.expectation(description: "Get account public key")
+        var response: Dictionary<String, Any>?
+        accounts?.publicKey(of: "dummyAddress", completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
         })
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getPublicKey")
+        XCTAssert(parameters!["address"] as! String == "dummyAddress")
     }
     
     func testAccountsDelegate() {
-        accounts?.delegate(votedBy: "dummyAddress", completionHandler: { (response) in
-            let parameters = response!["parameters"] as! [String: Any]?
-            XCTAssert(response!["url"] as! String == self.apiEndpoint + "/delegates")
-            XCTAssert(parameters!["address"] as! String == "dummyAddress")
+        let expectation = self.expectation(description: "Get account delegate")
+        var response: Dictionary<String, Any>?
+        accounts?.delegate(votedBy: "dummyAddress", completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
         })
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/delegates")
+        XCTAssert(parameters!["address"] as! String == "dummyAddress")
     }
     
     func testAccountsDelegateFee() {
-        accounts?.delegateFee(completionHandler: { (response) in
-            let parameters = response!["parameters"] as! [String: Any]?
-            XCTAssert(response!["url"] as! String == self.apiEndpoint + "/delegates/fee")
-            XCTAssert(parameters!.count == 0)
+        let expectation = self.expectation(description: "Get delegate fee")
+        var response: Dictionary<String, Any>?
+        accounts?.delegateFee(completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
         })
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/delegates/fee")
+        XCTAssert(parameters!.count == 0)
     }
     
     func testAccountsTop() {
-        accounts?.top(limit: 40, completionHandler: { (response) in
-            let parameters = response!["parameters"] as! [String: Any]?
-            XCTAssert(response!["url"] as! String == self.apiEndpoint + "/top")
-            XCTAssert(parameters!["limit"] as! Int == 40)
-            XCTAssert(parameters!["offset"] as! Int == 0)
+        let expectation = self.expectation(description: "Get top accounts")
+        var response: Dictionary<String, Any>?
+        accounts?.top(limit: 40, completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
         })
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/top")
+        XCTAssert(parameters!["limit"] as! Int == 40)
+        XCTAssert(parameters!["offset"] as! Int == 0)
     }
     
     func testAccountsAll() {
-        accounts?.all(limit: 40, completionHandler: { (response) in
-            let parameters = response!["parameters"] as! [String: Any]?
-            XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getAllAccounts")
-            XCTAssert(parameters!["limit"] as! Int == 40)
-            XCTAssert(parameters!["offset"] as! Int == 0)
+        let expectation = self.expectation(description: "Get all accounts")
+        var response: Dictionary<String, Any>?
+        accounts?.all(limit: 40, completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
         })
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/getAllAccounts")
+        XCTAssert(parameters!["limit"] as! Int == 40)
+        XCTAssert(parameters!["offset"] as! Int == 0)
     }
     
     func testAccountsCount() {
-        accounts?.count(completionHandler: { (response) in
-            let parameters = response!["parameters"] as! [String: Any]?
-            XCTAssert(response!["url"] as! String == self.apiEndpoint + "/count")
-            XCTAssert(parameters!.count == 0)
+        let expectation = self.expectation(description: "Get accounts count")
+        var response: Dictionary<String, Any>?
+        accounts?.count(completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
         })
+        waitForExpectations(timeout: 5, handler: nil)
+        
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == self.apiEndpoint + "/count")
+        XCTAssert(parameters!.count == 0)
     }
     
 }
