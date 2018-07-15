@@ -1,8 +1,21 @@
 language: objective-c
 osx_image: xcode9.4
 
-xcode_project: Client/Client.xcodeproj
-xcode_scheme: ClientTests
+cache:
+  directories:
+  - Carthage
+
+before_install:
+  - brew install carthage || true
+  - brew outdated carthage || brew upgrade carthage
+  - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
+
+before_script:
+  # bootstrap the dependencies for the project
+  - cd Client && carthage bootstrap --cache-builds
+
+script:
+    - xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
 git:
   depth: 1
