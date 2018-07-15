@@ -25,6 +25,7 @@
 		D03F5E1520FABF3E00ED8884 /* WalletsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */; };
 		D03F5E1920FAC1D900ED8884 /* TransactionsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */; };
 		D03F5E2020FBE5BA00ED8884 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */; };
+		D03F5E2220FBE7D700ED8884 /* BlocksOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2120FBE7D700ED8884 /* BlocksOneTest.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0DE448220F5377100079494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; };
@@ -77,6 +78,7 @@
 		D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTwo.swift; sourceTree = "<group>"; };
 		D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTwo.swift; sourceTree = "<group>"; };
 		D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
+		D03F5E2120FBE7D700ED8884 /* BlocksOneTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksOneTest.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D03F5DFD20FA79F700ED8884 /* AccountsOneTest.swift */,
+				D03F5E2120FBE7D700ED8884 /* BlocksOneTest.swift */,
 			);
 			path = One;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F5DFE20FA79F700ED8884 /* AccountsOneTest.swift in Sources */,
+				D03F5E2220FBE7D700ED8884 /* BlocksOneTest.swift in Sources */,
 				D03F5E2020FBE5BA00ED8884 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
