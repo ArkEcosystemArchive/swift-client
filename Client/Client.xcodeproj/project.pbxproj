@@ -29,6 +29,7 @@
 		D03F5E2520FBEEF400ED8884 /* LoaderOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2420FBEEF400ED8884 /* LoaderOneTest.swift */; };
 		D03F5E2720FBF04C00ED8884 /* PeersOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2620FBF04C00ED8884 /* PeersOneTest.swift */; };
 		D03F5E2920FBF1A900ED8884 /* SignaturesOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2820FBF1A900ED8884 /* SignaturesOneTest.swift */; };
+		D03F5E2B20FD21A800ED8884 /* DelegatesOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2A20FD21A800ED8884 /* DelegatesOneTest.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0DE448220F5377100079494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; };
@@ -85,6 +86,7 @@
 		D03F5E2420FBEEF400ED8884 /* LoaderOneTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderOneTest.swift; sourceTree = "<group>"; };
 		D03F5E2620FBF04C00ED8884 /* PeersOneTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersOneTest.swift; sourceTree = "<group>"; };
 		D03F5E2820FBF1A900ED8884 /* SignaturesOneTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturesOneTest.swift; sourceTree = "<group>"; };
+		D03F5E2A20FD21A800ED8884 /* DelegatesOneTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesOneTest.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				D03F5DFD20FA79F700ED8884 /* AccountsOneTest.swift */,
 				D03F5E2120FBE7D700ED8884 /* BlocksOneTest.swift */,
+				D03F5E2A20FD21A800ED8884 /* DelegatesOneTest.swift */,
 				D03F5E2420FBEEF400ED8884 /* LoaderOneTest.swift */,
 				D03F5E2620FBF04C00ED8884 /* PeersOneTest.swift */,
 				D03F5E2820FBF1A900ED8884 /* SignaturesOneTest.swift */,
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F5DFE20FA79F700ED8884 /* AccountsOneTest.swift in Sources */,
+				D03F5E2B20FD21A800ED8884 /* DelegatesOneTest.swift in Sources */,
 				D03F5E2220FBE7D700ED8884 /* BlocksOneTest.swift in Sources */,
 				D03F5E2720FBF04C00ED8884 /* PeersOneTest.swift in Sources */,
 				D03F5E2920FBF1A900ED8884 /* SignaturesOneTest.swift in Sources */,

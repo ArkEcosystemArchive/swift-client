@@ -56,7 +56,7 @@ extension One {
         }
         
         /// Retrieves all delegates
-        public func voters(parameters: [String: Any]? = nil, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        public func all(parameters: [String: Any]? = nil, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
             apiHandler(endpoint, parameters, completionHandler)
         }
         
