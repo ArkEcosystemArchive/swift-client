@@ -1,13 +1,13 @@
-# ARK Crypto - Swift
+# Ark Client - Swift
 
 <p align="center">
-    <img src="https://github.com/ArkEcosystem/swift-crypto/blob/master/banner.png" />
+    <img src="https://github.com/ArkEcosystem/swift-client/blob/master/banner.png" />
 </p>
 
-> A simple Cryptography Implementation in Swift for the ARK Blockchain.
+> A simple Swift API client for the Ark Blockchain.
 
-[![Build Status](https://img.shields.io/travis/ArkEcosystem/swift-crypto/master.svg?style=flat-square)](https://travis-ci.org/ArkEcosystem/swift-crypto)
-[![Latest Version](https://img.shields.io/github/release/ArkEcosystem/swift-crypto.svg?style=flat-square)](https://github.com/ArkEcosystem/swift-crypto/releases)
+[![Build Status](https://img.shields.io/travis/ArkEcosystem/swift-client/master.svg?style=flat-square)](https://travis-ci.org/ArkEcosystem/swift-client)
+[![Latest Version](https://img.shields.io/github/release/ArkEcosystem/swift-client.svg?style=flat-square)](https://github.com/ArkEcosystem/swift-client/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
@@ -16,6 +16,10 @@
 ...
 ```
 
+## Documentation
+
+You can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.ark.io/v1.0/docs/clients-swift).
+
 ## Security
 
 If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
@@ -23,6 +27,7 @@ If you discover a security vulnerability within this package, please send an e-m
 ## Credits
 
 - [Brian Faust](https://github.com/faustbrian)
+- [ItsANameToo](https://github.com/ItsANameToo)
 - [All Contributors](../../../../contributors)
 
 ## License
