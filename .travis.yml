@@ -10,20 +10,19 @@ before_install:
   - brew outdated carthage || brew upgrade carthage
   - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
 
+install:
+  # Install swiftlint through precompiled .pkg, as that is the fastest approach
+  - wget --output-document /tmp/SwiftLint.pkg https://github.com/realm/SwiftLint/releases/download/0.9.1/SwiftLint.pkg && sudo installer -pkg /tmp/SwiftLint.pkg -target /
+
 before_script:
   # bootstrap the dependencies for the project
   - cd Client && carthage bootstrap --cache-builds
-
-install:
-  # Install swiftlint through precompiled .pkg, as that is the fastest approach
-  - wget --output-document /tmp/SwiftLint.pkg https://github.com/realm/SwiftLint/releases/download/0.9.1/SwiftLint.pkg &&
-  sudo installer -pkg /tmp/SwiftLint.pkg -target /
 
 script:
     - xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  
+
 git:
   depth: 1
