@@ -34,6 +34,7 @@
 		D03F5E31210141A100ED8884 /* BlocksTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */; };
 		D03F5E3321014A6C00ED8884 /* DelegatesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */; };
 		D03F5E352101504D00ED8884 /* NodeTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E342101504D00ED8884 /* NodeTwoTest.swift */; };
+		D03F5E372101512800ED8884 /* PeersTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E362101512800ED8884 /* PeersTwoTest.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0DE448220F5377100079494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; };
@@ -95,6 +96,7 @@
 		D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTwoTest.swift; sourceTree = "<group>"; };
 		D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesTwoTest.swift; sourceTree = "<group>"; };
 		D03F5E342101504D00ED8884 /* NodeTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTwoTest.swift; sourceTree = "<group>"; };
+		D03F5E362101512800ED8884 /* PeersTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersTwoTest.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */,
 				D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */,
 				D03F5E342101504D00ED8884 /* NodeTwoTest.swift */,
+				D03F5E362101512800ED8884 /* PeersTwoTest.swift */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				D03F5E2020FBE5BA00ED8884 /* TestHelpers.swift in Sources */,
 				D03F5E352101504D00ED8884 /* NodeTwoTest.swift in Sources */,
 				D03F5E31210141A100ED8884 /* BlocksTwoTest.swift in Sources */,
+				D03F5E372101512800ED8884 /* PeersTwoTest.swift in Sources */,
 				D03F5E2520FBEEF400ED8884 /* LoaderOneTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
