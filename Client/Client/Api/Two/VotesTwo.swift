@@ -24,7 +24,7 @@ extension Two {
         }
 
         /// Retrieves a vote
-        public func status(id: String, completionHandler: @escaping ([String: Any]?) -> Void) {
+        public func get(id: String, completionHandler: @escaping ([String: Any]?) -> Void) {
             apiGetHandler("\(endpoint)/\(id)", [:], completionHandler)
         }
 
