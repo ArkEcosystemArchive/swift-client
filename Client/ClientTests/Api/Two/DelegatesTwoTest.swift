@@ -100,7 +100,7 @@ class DelegatesTwoTest: XCTestCase {
     func testDelegatesBlockAddress() {
         let expectation = self.expectation(description: "Get blocks by delegate address")
         var response: [String: Any]?
-        delegates?.blocks(byName: "dummyDelegateAddress", completionHandler: { (res) in
+        delegates?.blocks(byAddress: "dummyDelegateAddress", completionHandler: { (res) in
             response = res
             expectation.fulfill()
         })
@@ -115,7 +115,7 @@ class DelegatesTwoTest: XCTestCase {
     func testDelegatesBlockKey() {
         let expectation = self.expectation(description: "Get blocks by delegate public key")
         var response: [String: Any]?
-        delegates?.blocks(byName: "dummyDelegateKey", completionHandler: { (res) in
+        delegates?.blocks(byKey: "dummyDelegateKey", completionHandler: { (res) in
             response = res
             expectation.fulfill()
         })
@@ -145,7 +145,7 @@ class DelegatesTwoTest: XCTestCase {
     func testDelegatesVotersAddress() {
         let expectation = self.expectation(description: "Get voters by delegate address")
         var response: [String: Any]?
-        delegates?.voters(byName: "dummyDelegateKey", completionHandler: { (res) in
+        delegates?.voters(byAddress: "dummyDelegateKey", completionHandler: { (res) in
             response = res
             expectation.fulfill()
         })
@@ -160,7 +160,7 @@ class DelegatesTwoTest: XCTestCase {
     func testDelegatesVotersKey() {
         let expectation = self.expectation(description: "Get voters by delegate public key")
         var response: [String: Any]?
-        delegates?.voters(byName: "dummyDelegateKey", completionHandler: { (res) in
+        delegates?.voters(byKey: "dummyDelegateKey", completionHandler: { (res) in
             response = res
             expectation.fulfill()
         })
