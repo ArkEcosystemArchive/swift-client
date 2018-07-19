@@ -11,27 +11,25 @@ import Foundation
 
 extension Two {
     class Votes {
-        
+
         private let client: ArkClient
         private let apiGetHandler: ApiGetHandler
         private var endpoint: String {
-            get {
-                return "\(client.host)/votes"
-            }
+            return "\(client.host)/votes"
         }
-        
+
         public init(client: ArkClient, _ apiGetHandler: @escaping ApiGetHandler = handleApiGet) {
             self.client = client
             self.apiGetHandler = apiGetHandler
         }
-        
+
         /// Retrieves a vote
-        public func status(id: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        public func status(id: String, completionHandler: @escaping ([String: Any]?) -> Void) {
             apiGetHandler("\(endpoint)/\(id)", [:], completionHandler)
         }
-        
+
         /// Retrieves all votes
-        public func all(limit: Int = 20, page: Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        public func all(limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
             apiGetHandler(endpoint, ["limit": limit, "page": page], completionHandler)
         }
     }

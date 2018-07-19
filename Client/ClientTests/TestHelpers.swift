@@ -12,5 +12,5 @@ import Foundation
 
 /// Mock function to handle an API GET request
 func mockHandleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
-    completionHandler(["url": url, "parameters": parameters])
+    completionHandler(["url": url, "parameters": parameters ?? ""])
 }

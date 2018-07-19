@@ -10,10 +10,10 @@
 import Foundation
 
 class ArkClient {
-    
+
     let host: String
     let version: Int
-    
+
     init(host: String, version: Int) {
         self.host = host
         self.version = version

@@ -11,22 +11,20 @@ import Foundation
 
 extension One {
     class Signatures {
-        
+
         private let client: ArkClient
         private let apiHandler: ApiGetHandler
         private var endpoint: String {
-            get {
-                return "\(client.host)/signatures"
-            }
+            return "\(client.host)/signatures"
         }
-        
+
         public init(client: ArkClient, _ apiHandler: @escaping ApiGetHandler = handleApiGet) {
             self.client = client
             self.apiHandler = apiHandler
         }
-        
+
         /// Retrieves the fee for a second signature
-        public func fee(completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        public func fee(completionHandler: @escaping ([String: Any]?) -> Void) {
             apiHandler("\(endpoint)/fee", [:], completionHandler)
         }
     }

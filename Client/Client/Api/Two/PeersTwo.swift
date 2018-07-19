@@ -11,27 +11,25 @@ import Foundation
 
 extension Two {
     class Peers {
-        
+
         private let client: ArkClient
         private let apiGetHandler: ApiGetHandler
         private var endpoint: String {
-            get {
-                return "\(client.host)/peers"
-            }
+            return "\(client.host)/peers"
         }
-        
+
         public init(client: ArkClient, _ apiGetHandler: @escaping ApiGetHandler = handleApiGet) {
             self.client = client
             self.apiGetHandler = apiGetHandler
         }
-        
+
         /// Retrieves a peer
-        public func status(ip: String, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        public func status(ip: String, completionHandler: @escaping ([String: Any]?) -> Void) {
             apiGetHandler("\(endpoint)/\(ip)", [:], completionHandler)
         }
-        
+
         /// Retrieves all peers
-        public func all(limit: Int = 20, page: Int = 1, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+        public func all(limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
             apiGetHandler(endpoint, ["limit": limit, "page": page], completionHandler)
         }
     }
