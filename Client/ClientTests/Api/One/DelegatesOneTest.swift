@@ -140,5 +140,19 @@ class DelegatesOneTest: XCTestCase {
         XCTAssert(parameters!["limit"] as! String == "40")
         XCTAssert(parameters!["q"] as! String == "dummyQuery")
     }
+
+    func testDelegatesNextForgers() {
+        let expectation = self.expectation(description: "Get next forging delegates")
+        var response: Dictionary<String, Any>?
+        delegates?.nextForgers(completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 5, handler: nil)
+
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/getNextForgers")
+        XCTAssert(parameters!.count == 0)
+    }
     
 }

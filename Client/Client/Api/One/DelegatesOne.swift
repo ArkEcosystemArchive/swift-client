@@ -71,7 +71,7 @@ extension One {
         }
 
         /// Retrieves a list of delegates that will forge next
-        public func nextForgers(publicKey: String, completionHandler: @escaping ([String: Any]?) -> Void) {
+        public func nextForgers(completionHandler: @escaping ([String: Any]?) -> Void) {
             apiHandler("\(endpoint)/getNextForgers", [:], completionHandler)
         }
     }
