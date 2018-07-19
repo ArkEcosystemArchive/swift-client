@@ -26,8 +26,8 @@ extension Two {
         }
 
         /// Creates the given transaction(s)
-        public func search(body: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
-            apiPostHandler("\(endpoint)/search", [:], body, completionHandler)
+        public func create(body: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
+            apiPostHandler(endpoint, [:], body, completionHandler)
         }
 
         /// Retrieves the given transaction
