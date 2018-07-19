@@ -22,5 +22,8 @@ install:
 script:
     - xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+  
 git:
   depth: 1
