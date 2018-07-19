@@ -40,7 +40,7 @@ extension Two {
             apiGetHandler("\(endpoint)/\(id)/transactions", ["limit": limit, "page": page], completionHandler)
         }
 
-        /// Searches for a transaction
+        /// Searches for a block
         public func search(body: [String: Any]?, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
             apiPostHandler("\(endpoint)/search", ["limit": limit, "page": page], body, completionHandler)
         }

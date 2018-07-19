@@ -11,6 +11,11 @@ import Foundation
 
 
 /// Mock function to handle an API GET request
-func mockHandleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping (Dictionary<String, Any>?) -> Void) {
+func mockHandleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
     completionHandler(["url": url, "parameters": parameters ?? ""])
+}
+
+// Mock function to handle an API POST request
+func mockHandleApiPost(_ url: String, _ parameters: [String: Any]?, _ body: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
+    completionHandler(["url": url, "parameters": parameters ?? "", "body": body ?? ""])
 }
