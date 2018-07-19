@@ -19,7 +19,7 @@ before_script:
   - cd Client && carthage bootstrap --cache-builds
 
 script:
-  - xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
+  - xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter` && exit ${PIPESTATUS[0]}
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

@@ -25,8 +25,6 @@ extension Two {
             self.apiPostHandler = apiPostHandler
         }
 
-        // TODO: check if there is a /transactions/fees endpoint
-
         /// Creates the given transaction(s)
         public func search(body: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
             apiPostHandler("\(endpoint)/search", [:], body, completionHandler)
