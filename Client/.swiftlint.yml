@@ -1,0 +1,12 @@
+disabled_rules:
+  - line_length # Just use Xcode properly and it already wraps lines
+
+included:
+  - Client
+
+excluded:
+  - Carthage
+
+# Configured rules
+identifier_name:
+  min_length: 2
