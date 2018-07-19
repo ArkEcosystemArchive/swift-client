@@ -70,7 +70,7 @@ class BlocksTwoTest: XCTestCase {
     }
 
     func testBlocksSearch() {
-        let expectation = self.expectation(description: "Get height")
+        let expectation = self.expectation(description: "Search a block")
         var response: [String: Any]?
         blocks?.search(body: ["totalAmount": 100000000], completionHandler: { (res) in
             response = res
