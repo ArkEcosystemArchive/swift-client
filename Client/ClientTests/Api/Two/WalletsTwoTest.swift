@@ -21,8 +21,8 @@ class WalletsTwoTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let client = ArkClient(host: apiHost, version: 2)
-        wallets = Two.Wallets(client: client, mockHandleApiGet, mockHandleApiPost)
+        let connection = Connection(host: apiHost, version: 2)
+        wallets = Two.Wallets(connection: connection, mockHandleApiGet, mockHandleApiPost)
     }
 
     func testWalletsGetName() {

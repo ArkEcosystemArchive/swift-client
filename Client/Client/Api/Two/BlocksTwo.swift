@@ -12,15 +12,15 @@ import Foundation
 extension Two {
     class Blocks {
 
-        private let client: ArkClient
+        private let connection: Connection
         private let apiGetHandler: ApiGetHandler
         private let apiPostHandler: ApiPostHandler
         private var endpoint: String {
-            return "\(client.host)/blocks"
+            return "\(connection.host)/blocks"
         }
 
-        public init(client: ArkClient, _ apiGetHandler: @escaping ApiGetHandler = handleApiGet, _ apiPostHandler: @escaping ApiPostHandler = handleApiPost) {
-            self.client = client
+        public init(connection: Connection, _ apiGetHandler: @escaping ApiGetHandler = handleApiGet, _ apiPostHandler: @escaping ApiPostHandler = handleApiPost) {
+            self.connection = connection
             self.apiGetHandler = apiGetHandler
             self.apiPostHandler = apiPostHandler
         }

@@ -21,8 +21,8 @@ class NodeTwoTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let client = ArkClient(host: apiHost, version: 2)
-        node = Two.Node(client: client, mockHandleApiGet)
+        let connection = Connection(host: apiHost, version: 2)
+        node = Two.Node(connection: connection, mockHandleApiGet)
     }
 
     func testNodeStatus() {

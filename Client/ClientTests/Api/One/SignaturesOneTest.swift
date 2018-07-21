@@ -21,8 +21,8 @@ class SignaturesOneTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let client = ArkClient(host: apiHost, version: 1)
-        signatures = One.Signatures(client: client, mockHandleApiGet)
+        let connection = Connection(host: apiHost, version: 1)
+        signatures = One.Signatures(connection: connection, mockHandleApiGet)
     }
 
     func testSignaturesFee() {

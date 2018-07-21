@@ -42,7 +42,7 @@
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0DE448220F5377100079494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; };
 		D0DE448320F5377100079494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; };
-		D0DE448720F53A8E00079494 /* ArkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448620F53A8E00079494 /* ArkClient.swift */; };
+		D0DE448720F53A8E00079494 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448620F53A8E00079494 /* Connection.swift */; };
 		D0DE448920F53B2100079494 /* AccountsOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448820F53B2100079494 /* AccountsOne.swift */; };
 		D0DE448B20F544C400079494 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0DE448D20F6941900079494 /* ArkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448C20F6941900079494 /* ArkError.swift */; };
@@ -109,7 +109,7 @@
 		D0DE446D20F52ADF00079494 /* ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE447420F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0DE448120F5377000079494 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
-		D0DE448620F53A8E00079494 /* ArkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkClient.swift; sourceTree = "<group>"; };
+		D0DE448620F53A8E00079494 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		D0DE448820F53B2100079494 /* AccountsOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsOne.swift; sourceTree = "<group>"; };
 		D0DE448C20F6941900079494 /* ArkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,7 +217,7 @@
 			children = (
 				D0DE448020F52B7700079494 /* Two */,
 				D0DE447F20F52B6B00079494 /* One */,
-				D0DE448620F53A8E00079494 /* ArkClient.swift */,
+				D0DE448620F53A8E00079494 /* Connection.swift */,
 				D03F5DF120F908FC00ED8884 /* Util.swift */,
 			);
 			path = Api;
@@ -384,7 +384,7 @@
 				D03F5E1520FABF3E00ED8884 /* WalletsTwo.swift in Sources */,
 				D03F5E1320FAB9BF00ED8884 /* VotesTwo.swift in Sources */,
 				D03F5E0A20FAA4EA00ED8884 /* BlocksTwo.swift in Sources */,
-				D0DE448720F53A8E00079494 /* ArkClient.swift in Sources */,
+				D0DE448720F53A8E00079494 /* Connection.swift in Sources */,
 				D03F5E0420FA9A1F00ED8884 /* One.swift in Sources */,
 				D03F5DF020F8E46D00ED8884 /* BlocksOne.swift in Sources */,
 				D03F5E1920FAC1D900ED8884 /* TransactionsTwo.swift in Sources */,

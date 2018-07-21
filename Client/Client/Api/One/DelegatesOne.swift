@@ -12,14 +12,14 @@ import Foundation
 extension One {
     class Delegates {
 
-        private let client: ArkClient
+        private let connection: Connection
         private let apiHandler: ApiGetHandler
         private var endpoint: String {
-            return "\(client.host)/delegates"
+            return "\(connection.host)/delegates"
         }
 
-        public init(client: ArkClient, _ apiHandler: @escaping ApiGetHandler = handleApiGet) {
-            self.client = client
+        public init(connection: Connection, _ apiHandler: @escaping ApiGetHandler = handleApiGet) {
+            self.connection = connection
             self.apiHandler = apiHandler
         }
 

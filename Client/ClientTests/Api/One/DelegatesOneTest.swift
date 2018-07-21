@@ -21,8 +21,8 @@ class DelegatesOneTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let client = ArkClient(host: apiHost, version: 1)
-        delegates = One.Delegates(client: client, mockHandleApiGet)
+        let connection = Connection(host: apiHost, version: 1)
+        delegates = One.Delegates(connection: connection, mockHandleApiGet)
     }
 
     func testDelegatesGetByName() {

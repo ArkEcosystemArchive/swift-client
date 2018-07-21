@@ -12,14 +12,14 @@ import Foundation
 extension Two {
     class Peers {
 
-        private let client: ArkClient
+        private let connection: Connection
         private let apiGetHandler: ApiGetHandler
         private var endpoint: String {
-            return "\(client.host)/peers"
+            return "\(connection.host)/peers"
         }
 
-        public init(client: ArkClient, _ apiGetHandler: @escaping ApiGetHandler = handleApiGet) {
-            self.client = client
+        public init(connection: Connection, _ apiGetHandler: @escaping ApiGetHandler = handleApiGet) {
+            self.connection = connection
             self.apiGetHandler = apiGetHandler
         }
 

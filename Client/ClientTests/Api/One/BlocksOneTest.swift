@@ -21,8 +21,8 @@ class BlocksOneTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let client = ArkClient(host: apiHost, version: 1)
-        blocks = One.Blocks(client: client, mockHandleApiGet)
+        let connection = Connection(host: apiHost, version: 1)
+        blocks = One.Blocks(connection: connection, mockHandleApiGet)
     }
 
     func testBlocksGet() {

@@ -21,8 +21,8 @@ class TransactionsOneTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let client = ArkClient(host: apiHost, version: 1)
-        transactions = One.Transactions(client: client, mockHandleApiGet)
+        let connection = Connection(host: apiHost, version: 1)
+        transactions = One.Transactions(connection: connection, mockHandleApiGet)
     }
 
     func testTransactionsGet() {

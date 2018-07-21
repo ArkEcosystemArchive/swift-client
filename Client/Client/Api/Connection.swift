@@ -9,7 +9,7 @@
 
 import Foundation
 
-class ArkClient {
+class Connection {
 
     let host: String
     let version: Int

@@ -21,8 +21,8 @@ class PeersOneTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let client = ArkClient(host: apiHost, version: 1)
-        peers = One.Peers(client: client, mockHandleApiGet)
+        let connection = Connection(host: apiHost, version: 1)
+        peers = One.Peers(connection: connection, mockHandleApiGet)
     }
 
     func testPeersGet() {

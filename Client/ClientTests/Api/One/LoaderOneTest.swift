@@ -21,8 +21,8 @@ class LoaderOneTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let client = ArkClient(host: apiHost, version: 1)
-        loader = One.Loader(client: client, mockHandleApiGet)
+        let connection = Connection(host: apiHost, version: 1)
+        loader = One.Loader(connection: connection, mockHandleApiGet)
     }
 
     func testLoaderStatus() {

@@ -12,14 +12,14 @@ import Foundation
 extension One {
     class Transactions {
 
-        private let client: ArkClient
+        private let connection: Connection
         private let apiHandler: ApiGetHandler
         private var endpoint: String {
-            return "\(client.host)/transactions"
+            return "\(connection.host)/transactions"
         }
 
-        public init(client: ArkClient, _ apiHandler: @escaping ApiGetHandler = handleApiGet) {
-            self.client = client
+        public init(connection: Connection, _ apiHandler: @escaping ApiGetHandler = handleApiGet) {
+            self.connection = connection
             self.apiHandler = apiHandler
         }
 
