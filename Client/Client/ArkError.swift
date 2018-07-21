@@ -13,4 +13,5 @@ enum ArkError: Error {
     case invalidResponse
     case invalidOffset
     case invalidLimit
+    case unknownConnection
 }

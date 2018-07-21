@@ -38,6 +38,8 @@
 		D03F5E39210151E200ED8884 /* VotesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E38210151E200ED8884 /* VotesTwoTest.swift */; };
 		D03F5E3B2101551600ED8884 /* WalletsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3A2101551600ED8884 /* WalletsTwoTest.swift */; };
 		D03F5E3D2101575500ED8884 /* TransactionsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */; };
+		D03F5E652103B04500ED8884 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E642103B04500ED8884 /* ConnectionManager.swift */; };
+		D03F5E672103B97A00ED8884 /* ConnectionManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0DE448220F5377100079494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; };
@@ -103,6 +105,8 @@
 		D03F5E38210151E200ED8884 /* VotesTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotesTwoTest.swift; sourceTree = "<group>"; };
 		D03F5E3A2101551600ED8884 /* WalletsTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTwoTest.swift; sourceTree = "<group>"; };
 		D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTwoTest.swift; sourceTree = "<group>"; };
+		D03F5E642103B04500ED8884 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerTest.swift; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,8 +142,9 @@
 		D03F5E0720FAA0C800ED8884 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				D03F5E2F2101418600ED8884 /* Two */,
 				D03F5E0820FAA0D000ED8884 /* One */,
+				D03F5E2F2101418600ED8884 /* Two */,
+				D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -165,9 +170,9 @@
 				D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */,
 				D03F5E342101504D00ED8884 /* NodeTwoTest.swift */,
 				D03F5E362101512800ED8884 /* PeersTwoTest.swift */,
+				D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */,
 				D03F5E38210151E200ED8884 /* VotesTwoTest.swift */,
 				D03F5E3A2101551600ED8884 /* WalletsTwoTest.swift */,
-				D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -215,9 +220,10 @@
 		D0DE447E20F52B5F00079494 /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				D0DE448020F52B7700079494 /* Two */,
 				D0DE447F20F52B6B00079494 /* One */,
+				D0DE448020F52B7700079494 /* Two */,
 				D0DE448620F53A8E00079494 /* Connection.swift */,
+				D03F5E642103B04500ED8884 /* ConnectionManager.swift */,
 				D03F5DF120F908FC00ED8884 /* Util.swift */,
 			);
 			path = Api;
@@ -385,6 +391,7 @@
 				D03F5E1320FAB9BF00ED8884 /* VotesTwo.swift in Sources */,
 				D03F5E0A20FAA4EA00ED8884 /* BlocksTwo.swift in Sources */,
 				D0DE448720F53A8E00079494 /* Connection.swift in Sources */,
+				D03F5E652103B04500ED8884 /* ConnectionManager.swift in Sources */,
 				D03F5E0420FA9A1F00ED8884 /* One.swift in Sources */,
 				D03F5DF020F8E46D00ED8884 /* BlocksOne.swift in Sources */,
 				D03F5E1920FAC1D900ED8884 /* TransactionsTwo.swift in Sources */,
@@ -407,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F5DFE20FA79F700ED8884 /* AccountsOneTest.swift in Sources */,
+				D03F5E672103B97A00ED8884 /* ConnectionManagerTest.swift in Sources */,
 				D03F5E2B20FD21A800ED8884 /* DelegatesOneTest.swift in Sources */,
 				D03F5E2220FBE7D700ED8884 /* BlocksOneTest.swift in Sources */,
 				D03F5E2D20FD287100ED8884 /* TransactionsOneTest.swift in Sources */,
