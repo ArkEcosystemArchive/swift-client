@@ -144,7 +144,6 @@
 			children = (
 				D03F5E0820FAA0D000ED8884 /* One */,
 				D03F5E2F2101418600ED8884 /* Two */,
-				D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -200,9 +199,12 @@
 			isa = PBXGroup;
 			children = (
 				D0DE447E20F52B5F00079494 /* Api */,
+				D0DE448C20F6941900079494 /* ArkError.swift */,
+				D0DE448620F53A8E00079494 /* Connection.swift */,
+				D03F5E642103B04500ED8884 /* ConnectionManager.swift */,
+				D03F5DF120F908FC00ED8884 /* Util.swift */,
 				D0DE446720F52ADF00079494 /* Client.h */,
 				D0DE446820F52ADF00079494 /* Info.plist */,
-				D0DE448C20F6941900079494 /* ArkError.swift */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -211,8 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				D03F5E0720FAA0C800ED8884 /* Api */,
-				D0DE447420F52ADF00079494 /* Info.plist */,
+				D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */,
 				D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */,
+				D0DE447420F52ADF00079494 /* Info.plist */,
 			);
 			path = ClientTests;
 			sourceTree = "<group>";
@@ -222,9 +225,6 @@
 			children = (
 				D0DE447F20F52B6B00079494 /* One */,
 				D0DE448020F52B7700079494 /* Two */,
-				D0DE448620F53A8E00079494 /* Connection.swift */,
-				D03F5E642103B04500ED8884 /* ConnectionManager.swift */,
-				D03F5DF120F908FC00ED8884 /* Util.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
