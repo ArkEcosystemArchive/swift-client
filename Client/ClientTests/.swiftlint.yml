@@ -1,0 +1,4 @@
+disabled_rules:
+  - line_length # Just use Xcode properly and it already wraps lines
+  - force_cast # We allow it in tests
+  - type_body_length

@@ -3,6 +3,7 @@ disabled_rules:
 
 included:
   - Client
+  - ClientTests
 
 excluded:
   - Carthage
