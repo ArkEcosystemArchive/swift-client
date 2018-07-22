@@ -40,6 +40,44 @@
 		D03F5E3D2101575500ED8884 /* TransactionsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */; };
 		D03F5E652103B04500ED8884 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E642103B04500ED8884 /* ConnectionManager.swift */; };
 		D03F5E672103B97A00ED8884 /* ConnectionManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */; };
+		D03F5E762104BC9400ED8884 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F5E6D2104BC9300ED8884 /* Client.framework */; };
+		D03F5E8A2105053100ED8884 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D03F5E8B2105056100ED8884 /* ArkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448C20F6941900079494 /* ArkError.swift */; };
+		D03F5E8C2105056100ED8884 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448620F53A8E00079494 /* Connection.swift */; };
+		D03F5E8D2105056100ED8884 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E642103B04500ED8884 /* ConnectionManager.swift */; };
+		D03F5E8E2105056100ED8884 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF120F908FC00ED8884 /* Util.swift */; };
+		D03F5E8F210505AA00ED8884 /* One.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0320FA9A1F00ED8884 /* One.swift */; };
+		D03F5E90210505AA00ED8884 /* AccountsOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448820F53B2100079494 /* AccountsOne.swift */; };
+		D03F5E91210505AA00ED8884 /* BlocksOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DEF20F8E46D00ED8884 /* BlocksOne.swift */; };
+		D03F5E92210505AA00ED8884 /* DelegatesOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF320F90F1A00ED8884 /* DelegatesOne.swift */; };
+		D03F5E93210505AA00ED8884 /* LoaderOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF520F92DE000ED8884 /* LoaderOne.swift */; };
+		D03F5E94210505AA00ED8884 /* PeersOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF720F92F4400ED8884 /* PeersOne.swift */; };
+		D03F5E95210505AA00ED8884 /* SignaturesOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF920F9311800ED8884 /* SignaturesOne.swift */; };
+		D03F5E96210505AA00ED8884 /* TransactionsOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DFB20F931ED00ED8884 /* TransactionsOne.swift */; };
+		D03F5E97210505B100ED8884 /* Two.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0520FA9A4000ED8884 /* Two.swift */; };
+		D03F5E98210505B100ED8884 /* BlocksTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0920FAA4EA00ED8884 /* BlocksTwo.swift */; };
+		D03F5E99210505B100ED8884 /* DelegatesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0C20FAB6CD00ED8884 /* DelegatesTwo.swift */; };
+		D03F5E9A210505B100ED8884 /* NodeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0E20FAB88D00ED8884 /* NodeTwo.swift */; };
+		D03F5E9B210505B100ED8884 /* PeersTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */; };
+		D03F5E9C210505B100ED8884 /* TransactionsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */; };
+		D03F5E9D210505B100ED8884 /* VotesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* VotesTwo.swift */; };
+		D03F5E9E210505B100ED8884 /* WalletsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */; };
+		D03F5E9F210505CA00ED8884 /* AccountsOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DFD20FA79F700ED8884 /* AccountsOneTest.swift */; };
+		D03F5EA0210505CA00ED8884 /* BlocksOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2120FBE7D700ED8884 /* BlocksOneTest.swift */; };
+		D03F5EA1210505CA00ED8884 /* DelegatesOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2A20FD21A800ED8884 /* DelegatesOneTest.swift */; };
+		D03F5EA2210505CA00ED8884 /* LoaderOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2420FBEEF400ED8884 /* LoaderOneTest.swift */; };
+		D03F5EA3210505CA00ED8884 /* PeersOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2620FBF04C00ED8884 /* PeersOneTest.swift */; };
+		D03F5EA4210505CA00ED8884 /* SignaturesOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2820FBF1A900ED8884 /* SignaturesOneTest.swift */; };
+		D03F5EA5210505CA00ED8884 /* TransactionsOneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E2C20FD287100ED8884 /* TransactionsOneTest.swift */; };
+		D03F5EA6210505CE00ED8884 /* BlocksTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */; };
+		D03F5EA7210505CE00ED8884 /* DelegatesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */; };
+		D03F5EA8210505CE00ED8884 /* NodeTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E342101504D00ED8884 /* NodeTwoTest.swift */; };
+		D03F5EA9210505CE00ED8884 /* PeersTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E362101512800ED8884 /* PeersTwoTest.swift */; };
+		D03F5EAA210505CE00ED8884 /* TransactionsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */; };
+		D03F5EAB210505CE00ED8884 /* VotesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E38210151E200ED8884 /* VotesTwoTest.swift */; };
+		D03F5EAC210505CE00ED8884 /* WalletsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3A2101551600ED8884 /* WalletsTwoTest.swift */; };
+		D03F5EAD210505D400ED8884 /* ConnectionManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */; };
+		D03F5EAE210505D700ED8884 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
 		D0DE447520F52ADF00079494 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DE446720F52ADF00079494 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0DE448220F5377100079494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE448120F5377000079494 /* Alamofire.framework */; };
@@ -51,6 +89,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D03F5E772104BC9400ED8884 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0DE445B20F52ADF00079494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D03F5E6C2104BC9300ED8884;
+			remoteInfo = Client_iOS;
+		};
 		D0DE446F20F52ADF00079494 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D0DE445B20F52ADF00079494 /* Project object */;
@@ -107,11 +152,15 @@
 		D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTwoTest.swift; sourceTree = "<group>"; };
 		D03F5E642103B04500ED8884 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerTest.swift; sourceTree = "<group>"; };
+		D03F5E6D2104BC9300ED8884 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03F5E752104BC9400ED8884 /* ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03F5E88210501D500ED8884 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
+		D03F5E89210501E900ED8884 /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D0DE446420F52ADF00079494 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE446720F52ADF00079494 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
-		D0DE446820F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DE446820F52ADF00079494 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		D0DE446D20F52ADF00079494 /* ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0DE447420F52ADF00079494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DE447420F52ADF00079494 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		D0DE448120F5377000079494 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		D0DE448620F53A8E00079494 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		D0DE448820F53B2100079494 /* AccountsOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsOne.swift; sourceTree = "<group>"; };
@@ -119,6 +168,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D03F5E692104BC9300ED8884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D03F5E722104BC9400ED8884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03F5E762104BC9400ED8884 /* Client.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0DE446020F52ADF00079494 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,6 +255,8 @@
 			children = (
 				D0DE446420F52ADF00079494 /* Client.framework */,
 				D0DE446D20F52ADF00079494 /* ClientTests.xctest */,
+				D03F5E6D2104BC9300ED8884 /* Client.framework */,
+				D03F5E752104BC9400ED8884 /* ClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,11 +266,12 @@
 			children = (
 				D0DE447E20F52B5F00079494 /* Api */,
 				D0DE448C20F6941900079494 /* ArkError.swift */,
+				D0DE446720F52ADF00079494 /* Client.h */,
 				D0DE448620F53A8E00079494 /* Connection.swift */,
 				D03F5E642103B04500ED8884 /* ConnectionManager.swift */,
+				D03F5E88210501D500ED8884 /* Info-iOS.plist */,
+				D0DE446820F52ADF00079494 /* Info-macOS.plist */,
 				D03F5DF120F908FC00ED8884 /* Util.swift */,
-				D0DE446720F52ADF00079494 /* Client.h */,
-				D0DE446820F52ADF00079494 /* Info.plist */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -214,8 +281,9 @@
 			children = (
 				D03F5E0720FAA0C800ED8884 /* Api */,
 				D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */,
+				D03F5E89210501E900ED8884 /* Info-iOS.plist */,
+				D0DE447420F52ADF00079494 /* Info-macOS.plist */,
 				D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */,
-				D0DE447420F52ADF00079494 /* Info.plist */,
 			);
 			path = ClientTests;
 			sourceTree = "<group>";
@@ -262,6 +330,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D03F5E6A2104BC9300ED8884 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03F5E8A2105053100ED8884 /* Client.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0DE446120F52ADF00079494 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,6 +349,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D03F5E6C2104BC9300ED8884 /* Client_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D03F5E822104BC9400ED8884 /* Build configuration list for PBXNativeTarget "Client_iOS" */;
+			buildPhases = (
+				D03F5E682104BC9300ED8884 /* Sources */,
+				D03F5E692104BC9300ED8884 /* Frameworks */,
+				D03F5E6A2104BC9300ED8884 /* Headers */,
+				D03F5E6B2104BC9300ED8884 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Client_iOS;
+			productName = Client_iOS;
+			productReference = D03F5E6D2104BC9300ED8884 /* Client.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D03F5E742104BC9400ED8884 /* Client_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D03F5E832104BC9400ED8884 /* Build configuration list for PBXNativeTarget "Client_iOSTests" */;
+			buildPhases = (
+				D03F5E712104BC9400ED8884 /* Sources */,
+				D03F5E722104BC9400ED8884 /* Frameworks */,
+				D03F5E732104BC9400ED8884 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D03F5E782104BC9400ED8884 /* PBXTargetDependency */,
+			);
+			name = Client_iOSTests;
+			productName = Client_iOSTests;
+			productReference = D03F5E752104BC9400ED8884 /* ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D0DE446320F52ADF00079494 /* Client */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0DE447820F52ADF00079494 /* Build configuration list for PBXNativeTarget "Client" */;
@@ -321,6 +433,12 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "ARK Ecosystem";
 				TargetAttributes = {
+					D03F5E6C2104BC9300ED8884 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D03F5E742104BC9400ED8884 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					D0DE446320F52ADF00079494 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 0940;
@@ -344,11 +462,27 @@
 			targets = (
 				D0DE446320F52ADF00079494 /* Client */,
 				D0DE446C20F52ADF00079494 /* ClientTests */,
+				D03F5E6C2104BC9300ED8884 /* Client_iOS */,
+				D03F5E742104BC9400ED8884 /* Client_iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D03F5E6B2104BC9300ED8884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D03F5E732104BC9400ED8884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0DE446220F52ADF00079494 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,6 +516,56 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D03F5E682104BC9300ED8884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03F5E8B2105056100ED8884 /* ArkError.swift in Sources */,
+				D03F5E93210505AA00ED8884 /* LoaderOne.swift in Sources */,
+				D03F5E94210505AA00ED8884 /* PeersOne.swift in Sources */,
+				D03F5E8D2105056100ED8884 /* ConnectionManager.swift in Sources */,
+				D03F5E8C2105056100ED8884 /* Connection.swift in Sources */,
+				D03F5E91210505AA00ED8884 /* BlocksOne.swift in Sources */,
+				D03F5E9D210505B100ED8884 /* VotesTwo.swift in Sources */,
+				D03F5E97210505B100ED8884 /* Two.swift in Sources */,
+				D03F5E8F210505AA00ED8884 /* One.swift in Sources */,
+				D03F5E9A210505B100ED8884 /* NodeTwo.swift in Sources */,
+				D03F5E96210505AA00ED8884 /* TransactionsOne.swift in Sources */,
+				D03F5E92210505AA00ED8884 /* DelegatesOne.swift in Sources */,
+				D03F5E95210505AA00ED8884 /* SignaturesOne.swift in Sources */,
+				D03F5E9E210505B100ED8884 /* WalletsTwo.swift in Sources */,
+				D03F5E90210505AA00ED8884 /* AccountsOne.swift in Sources */,
+				D03F5E9C210505B100ED8884 /* TransactionsTwo.swift in Sources */,
+				D03F5E9B210505B100ED8884 /* PeersTwo.swift in Sources */,
+				D03F5E99210505B100ED8884 /* DelegatesTwo.swift in Sources */,
+				D03F5E98210505B100ED8884 /* BlocksTwo.swift in Sources */,
+				D03F5E8E2105056100ED8884 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D03F5E712104BC9400ED8884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D03F5EA0210505CA00ED8884 /* BlocksOneTest.swift in Sources */,
+				D03F5E9F210505CA00ED8884 /* AccountsOneTest.swift in Sources */,
+				D03F5EA5210505CA00ED8884 /* TransactionsOneTest.swift in Sources */,
+				D03F5EAD210505D400ED8884 /* ConnectionManagerTest.swift in Sources */,
+				D03F5EA3210505CA00ED8884 /* PeersOneTest.swift in Sources */,
+				D03F5EA8210505CE00ED8884 /* NodeTwoTest.swift in Sources */,
+				D03F5EA4210505CA00ED8884 /* SignaturesOneTest.swift in Sources */,
+				D03F5EA1210505CA00ED8884 /* DelegatesOneTest.swift in Sources */,
+				D03F5EA6210505CE00ED8884 /* BlocksTwoTest.swift in Sources */,
+				D03F5EA2210505CA00ED8884 /* LoaderOneTest.swift in Sources */,
+				D03F5EA9210505CE00ED8884 /* PeersTwoTest.swift in Sources */,
+				D03F5EA7210505CE00ED8884 /* DelegatesTwoTest.swift in Sources */,
+				D03F5EAC210505CE00ED8884 /* WalletsTwoTest.swift in Sources */,
+				D03F5EAA210505CE00ED8884 /* TransactionsTwoTest.swift in Sources */,
+				D03F5EAB210505CE00ED8884 /* VotesTwoTest.swift in Sources */,
+				D03F5EAE210505D700ED8884 /* TestHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0DE445F20F52ADF00079494 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +619,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D03F5E782104BC9400ED8884 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D03F5E6C2104BC9300ED8884 /* Client_iOS */;
+			targetProxy = D03F5E772104BC9400ED8884 /* PBXContainerItemProxy */;
+		};
 		D0DE447020F52ADF00079494 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D0DE446320F52ADF00079494 /* Client */;
@@ -443,6 +632,100 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D03F5E7E2104BC9400ED8884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Client/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ark.$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D03F5E7F2104BC9400ED8884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Client/Info-iOS.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ark.$(PROJECT_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D03F5E802104BC9400ED8884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ClientTests/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ark.ClientTests;
+				PRODUCT_NAME = ClientTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D03F5E812104BC9400ED8884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ClientTests/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.ark.ClientTests;
+				PRODUCT_NAME = ClientTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D0DE447620F52ADF00079494 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -498,6 +781,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -554,6 +838,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -578,15 +863,14 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Client/Info.plist;
+				INFOPLIST_FILE = "Client/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ark.Client;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ark.$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -609,15 +893,14 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Client/Info.plist;
+				INFOPLIST_FILE = "Client/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.ark.Client;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ark.$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
@@ -633,14 +916,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = ClientTests/Info.plist;
+				INFOPLIST_FILE = "ClientTests/Info-macOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ark.ClientTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ClientTests;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -655,14 +938,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = ClientTests/Info.plist;
+				INFOPLIST_FILE = "ClientTests/Info-macOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ark.ClientTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ClientTests;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -670,6 +953,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D03F5E822104BC9400ED8884 /* Build configuration list for PBXNativeTarget "Client_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03F5E7E2104BC9400ED8884 /* Debug */,
+				D03F5E7F2104BC9400ED8884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D03F5E832104BC9400ED8884 /* Build configuration list for PBXNativeTarget "Client_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03F5E802104BC9400ED8884 /* Debug */,
+				D03F5E812104BC9400ED8884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D0DE445E20F52ADF00079494 /* Build configuration list for PBXProject "Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
