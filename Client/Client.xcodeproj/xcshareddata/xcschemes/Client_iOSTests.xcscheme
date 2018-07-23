@@ -9,14 +9,14 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D03F5E6C2104BC9300ED8884"
-               BuildableName = "Client.framework"
-               BlueprintName = "Client_iOS"
+               BlueprintIdentifier = "D03F5E742104BC9400ED8884"
+               BuildableName = "ClientTests.xctest"
+               BlueprintName = "Client_iOSTests"
                ReferencedContainer = "container:Client.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
@@ -39,15 +40,6 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D03F5E6C2104BC9300ED8884"
-            BuildableName = "Client.framework"
-            BlueprintName = "Client_iOS"
-            ReferencedContainer = "container:Client.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D03F5E6C2104BC9300ED8884"
-            BuildableName = "Client.framework"
-            BlueprintName = "Client_iOS"
+            BlueprintIdentifier = "D03F5E742104BC9400ED8884"
+            BuildableName = "ClientTests.xctest"
+            BlueprintName = "Client_iOSTests"
             ReferencedContainer = "container:Client.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +74,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D03F5E6C2104BC9300ED8884"
-            BuildableName = "Client.framework"
-            BlueprintName = "Client_iOS"
+            BlueprintIdentifier = "D03F5E742104BC9400ED8884"
+            BuildableName = "ClientTests.xctest"
+            BlueprintName = "Client_iOSTests"
             ReferencedContainer = "container:Client.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
