@@ -9,7 +9,7 @@
 
 import Foundation
 
-enum ArkError: Error {
+public enum ArkError: Error {
     case invalidResponse
     case invalidOffset
     case invalidLimit

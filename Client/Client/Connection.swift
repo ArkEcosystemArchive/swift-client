@@ -9,12 +9,12 @@
 
 import Foundation
 
-class Connection {
+open class Connection {
 
     let host: String
     let version: Int
 
-    init(host: String, version: Int) {
+    public init(host: String, version: Int) {
         self.host = host
         self.version = version
     }

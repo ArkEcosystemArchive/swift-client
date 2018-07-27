@@ -9,8 +9,8 @@
 
 import Foundation
 
-extension Two {
-    class Wallets {
+public extension Two {
+    public class Wallets {
 
         private let connection: Connection
         private let apiGetHandler: ApiGetHandler

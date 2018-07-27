@@ -9,8 +9,8 @@
 
 import Foundation
 
-extension One {
-    class Peers {
+public extension One {
+    public class Peers {
 
         private let connection: Connection
         private let apiHandler: ApiGetHandler

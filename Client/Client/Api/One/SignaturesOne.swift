@@ -9,8 +9,8 @@
 
 import Foundation
 
-extension One {
-    class Signatures {
+public extension One {
+    public class Signatures {
 
         private let connection: Connection
         private let apiHandler: ApiGetHandler

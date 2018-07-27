@@ -11,8 +11,8 @@ import Alamofire
 import Foundation
 
 /// ApiHandler aliases
-typealias ApiGetHandler = (String, [String: Any]?, @escaping ([String: Any]?) -> Void) -> Void
-typealias ApiPostHandler = (String, [String: Any]?, [String: Any]?, @escaping ([String: Any]?) -> Void) -> Void
+public typealias ApiGetHandler = (String, [String: Any]?, @escaping ([String: Any]?) -> Void) -> Void
+public typealias ApiPostHandler = (String, [String: Any]?, [String: Any]?, @escaping ([String: Any]?) -> Void) -> Void
 
 /// Handles api get requests
 ///
@@ -20,7 +20,7 @@ typealias ApiPostHandler = (String, [String: Any]?, [String: Any]?, @escaping ([
 ///   - url: the url to which the request is made
 ///   - parameters: a dictionary of additional parameters that are send along with the request
 ///   - completionHandler: function to handle the response
-func handleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
+public func handleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
     Alamofire.request(url, parameters: parameters).responseJSON { response in
         if let json = response.result.value {
             completionHandler(json as? [String: Any])
@@ -31,7 +31,7 @@ func handleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler
 }
 
 /// Handles api post requests
-func handleApiPost(_ url: String, _ parameters: [String: Any]?, _ body: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
+public func handleApiPost(_ url: String, _ parameters: [String: Any]?, _ body: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
     var urlComponents = URLComponents(string: url)!
 
     // Create our own url including the parameters

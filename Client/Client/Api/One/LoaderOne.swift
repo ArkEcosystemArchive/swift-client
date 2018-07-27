@@ -9,8 +9,8 @@
 
 import Foundation
 
-extension One {
-    class Loader {
+public extension One {
+    public class Loader {
 
         private let connection: Connection
         private let apiHandler: ApiGetHandler

@@ -9,6 +9,6 @@
 
 import Foundation
 
-enum One {
+public enum One {
 
 }

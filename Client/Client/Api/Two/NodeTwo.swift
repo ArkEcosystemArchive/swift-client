@@ -9,8 +9,8 @@
 
 import Foundation
 
-extension Two {
-    class Node {
+public extension Two {
+    public class Node {
 
         private let connection: Connection
         private let apiGetHandler: ApiGetHandler

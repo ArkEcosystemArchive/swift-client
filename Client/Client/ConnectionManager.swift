@@ -9,7 +9,7 @@
 
 import Foundation
 
-class ConnectionManager {
+open class ConnectionManager {
 
     private var connections: [String: Connection]
     private var defaultConnection = "main"
