@@ -6,7 +6,7 @@
 
 > A simple Swift API client for the Ark Blockchain.
 
-[![Build Status](https://badgen.now.sh/travis/ArkEcosystem/swift-client)](https://badgen.now.sh/travis/ArkEcosystem/swift-client)
+[![Build Status](https://badgen.now.sh/travis/ArkEcosystem/swift-client)](https://travis-ci.org/ArkEcosystem/swift-client)
 [![Codecov](https://badgen.now.sh/codecov/c/github/arkecosystem/swift-client)](https://codecov.io/gh/arkecosystem/swift-client)
 [![Latest Version](https://badgen.now.sh/github/release/ArkEcosystem/swift-client)](https://github.com/ArkEcosystem/swift-client/releases)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
