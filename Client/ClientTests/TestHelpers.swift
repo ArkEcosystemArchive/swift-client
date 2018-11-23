@@ -14,13 +14,14 @@ let headers: HTTPHeaders = [
     "Content-Type": "application/json",
     "User-Agent": "ark-swift-client (https://github.com/ArkEcosystem/swift-client)"
 ]
+public typealias HTTPHeaders = [String: String]
 
 /// Mock function to handle an API GET request
 func mockHandleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
-    completionHandler(["url": url, "parameters": parameters ?? "", headers: headers])
+    completionHandler(["url": url, "parameters": parameters ?? "", "headers": headers])
 }
 
 // Mock function to handle an API POST request
 func mockHandleApiPost(_ url: String, _ parameters: [String: Any]?, _ body: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
-    completionHandler(["url": url, "parameters": parameters ?? "", "body": body ?? "", headers: headers])
+    completionHandler(["url": url, "parameters": parameters ?? "", "body": body ?? "", "headers": headers])
 }
