@@ -1,4 +1,4 @@
-// 
+//
 // This file is part of Ark Swift Client.
 //
 // (c) Ark Ecosystem <info@ark.io>
@@ -9,6 +9,13 @@
 
 import Alamofire
 import Foundation
+
+/// Set headers for the requests
+let headers: HTTPHeaders = [
+    "Content-Type": "application/json",
+    "User-Agent": "ark-swift-client (https://github.com/ArkEcosystem/swift-client)"
+]
+public typealias HTTPHeaders = [String: String]
 
 /// ApiHandler aliases
 public typealias ApiGetHandler = (String, [String: Any]?, @escaping ([String: Any]?) -> Void) -> Void
@@ -21,7 +28,7 @@ public typealias ApiPostHandler = (String, [String: Any]?, [String: Any]?, @esca
 ///   - parameters: a dictionary of additional parameters that are send along with the request
 ///   - completionHandler: function to handle the response
 public func handleApiGet(_ url: String, _ parameters: [String: Any]?, completionHandler: @escaping ([String: Any]?) -> Void) {
-    Alamofire.request(url, parameters: parameters).responseJSON { response in
+    Alamofire.request(url, parameters: parameters, headers: headers).responseJSON { response in
         if let json = response.result.value {
             completionHandler(json as? [String: Any])
         } else {
@@ -42,7 +49,7 @@ public func handleApiPost(_ url: String, _ parameters: [String: Any]?, _ body: [
         }
         urlComponents.queryItems = queryItems
     }
-    Alamofire.request(urlComponents, method: .post, parameters: body).responseJSON { (response) in
+    Alamofire.request(urlComponents, method: .post, parameters: body, headers: headers).responseJSON { (response) in
         if let json = response.result.value {
             completionHandler(json as? [String: Any])
         } else {
