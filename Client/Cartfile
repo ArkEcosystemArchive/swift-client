@@ -1,0 +1,2 @@
+# Require Alamofire
+github "Alamofire/Alamofire" ~> 4.7
