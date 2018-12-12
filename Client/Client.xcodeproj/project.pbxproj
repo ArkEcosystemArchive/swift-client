@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D03F5DF220F908FC00ED8884 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF120F908FC00ED8884 /* Util.swift */; };
-		D03F5E0620FA9A4000ED8884 /* Two.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0520FA9A4000ED8884 /* Two.swift */; };
-		D03F5E0A20FAA4EA00ED8884 /* BlocksTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0920FAA4EA00ED8884 /* BlocksTwo.swift */; };
-		D03F5E0D20FAB6CD00ED8884 /* DelegatesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0C20FAB6CD00ED8884 /* DelegatesTwo.swift */; };
-		D03F5E0F20FAB88D00ED8884 /* NodeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0E20FAB88D00ED8884 /* NodeTwo.swift */; };
-		D03F5E1120FAB93A00ED8884 /* PeersTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */; };
-		D03F5E1320FAB9BF00ED8884 /* VotesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* VotesTwo.swift */; };
-		D03F5E1520FABF3E00ED8884 /* WalletsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */; };
-		D03F5E1920FAC1D900ED8884 /* TransactionsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */; };
+		D03F5E0A20FAA4EA00ED8884 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0920FAA4EA00ED8884 /* Blocks.swift */; };
+		D03F5E0D20FAB6CD00ED8884 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0C20FAB6CD00ED8884 /* Delegates.swift */; };
+		D03F5E0F20FAB88D00ED8884 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0E20FAB88D00ED8884 /* Node.swift */; };
+		D03F5E1120FAB93A00ED8884 /* Peers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1020FAB93A00ED8884 /* Peers.swift */; };
+		D03F5E1320FAB9BF00ED8884 /* Votes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* Votes.swift */; };
+		D03F5E1520FABF3E00ED8884 /* Wallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* Wallets.swift */; };
+		D03F5E1920FAC1D900ED8884 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* Transactions.swift */; };
 		D03F5E2020FBE5BA00ED8884 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */; };
 		D03F5E31210141A100ED8884 /* BlocksTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */; };
 		D03F5E3321014A6C00ED8884 /* DelegatesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */; };
@@ -32,14 +31,13 @@
 		D03F5E8C2105056100ED8884 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE448620F53A8E00079494 /* Connection.swift */; };
 		D03F5E8D2105056100ED8884 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E642103B04500ED8884 /* ConnectionManager.swift */; };
 		D03F5E8E2105056100ED8884 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF120F908FC00ED8884 /* Util.swift */; };
-		D03F5E97210505B100ED8884 /* Two.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0520FA9A4000ED8884 /* Two.swift */; };
-		D03F5E98210505B100ED8884 /* BlocksTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0920FAA4EA00ED8884 /* BlocksTwo.swift */; };
-		D03F5E99210505B100ED8884 /* DelegatesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0C20FAB6CD00ED8884 /* DelegatesTwo.swift */; };
-		D03F5E9A210505B100ED8884 /* NodeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0E20FAB88D00ED8884 /* NodeTwo.swift */; };
-		D03F5E9B210505B100ED8884 /* PeersTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */; };
-		D03F5E9C210505B100ED8884 /* TransactionsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */; };
-		D03F5E9D210505B100ED8884 /* VotesTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* VotesTwo.swift */; };
-		D03F5E9E210505B100ED8884 /* WalletsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */; };
+		D03F5E98210505B100ED8884 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0920FAA4EA00ED8884 /* Blocks.swift */; };
+		D03F5E99210505B100ED8884 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0C20FAB6CD00ED8884 /* Delegates.swift */; };
+		D03F5E9A210505B100ED8884 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0E20FAB88D00ED8884 /* Node.swift */; };
+		D03F5E9B210505B100ED8884 /* Peers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1020FAB93A00ED8884 /* Peers.swift */; };
+		D03F5E9C210505B100ED8884 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* Transactions.swift */; };
+		D03F5E9D210505B100ED8884 /* Votes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* Votes.swift */; };
+		D03F5E9E210505B100ED8884 /* Wallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* Wallets.swift */; };
 		D03F5EA6210505CE00ED8884 /* BlocksTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */; };
 		D03F5EA7210505CE00ED8884 /* DelegatesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */; };
 		D03F5EA8210505CE00ED8884 /* NodeTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E342101504D00ED8884 /* NodeTwoTest.swift */; };
@@ -90,14 +88,13 @@
 
 /* Begin PBXFileReference section */
 		D03F5DF120F908FC00ED8884 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		D03F5E0520FA9A4000ED8884 /* Two.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Two.swift; sourceTree = "<group>"; };
-		D03F5E0920FAA4EA00ED8884 /* BlocksTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTwo.swift; sourceTree = "<group>"; };
-		D03F5E0C20FAB6CD00ED8884 /* DelegatesTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesTwo.swift; sourceTree = "<group>"; };
-		D03F5E0E20FAB88D00ED8884 /* NodeTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTwo.swift; sourceTree = "<group>"; };
-		D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersTwo.swift; sourceTree = "<group>"; };
-		D03F5E1220FAB9BF00ED8884 /* VotesTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotesTwo.swift; sourceTree = "<group>"; };
-		D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTwo.swift; sourceTree = "<group>"; };
-		D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTwo.swift; sourceTree = "<group>"; };
+		D03F5E0920FAA4EA00ED8884 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		D03F5E0C20FAB6CD00ED8884 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
+		D03F5E0E20FAB88D00ED8884 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		D03F5E1020FAB93A00ED8884 /* Peers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peers.swift; sourceTree = "<group>"; };
+		D03F5E1220FAB9BF00ED8884 /* Votes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Votes.swift; sourceTree = "<group>"; };
+		D03F5E1420FABF3E00ED8884 /* Wallets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallets.swift; sourceTree = "<group>"; };
+		D03F5E1820FAC1D900ED8884 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTwoTest.swift; sourceTree = "<group>"; };
 		D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesTwoTest.swift; sourceTree = "<group>"; };
@@ -183,14 +180,13 @@
 		D0C1638221C19D15005F3CD0 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				D03F5E0520FA9A4000ED8884 /* Two.swift */,
-				D03F5E0920FAA4EA00ED8884 /* BlocksTwo.swift */,
-				D03F5E0C20FAB6CD00ED8884 /* DelegatesTwo.swift */,
-				D03F5E0E20FAB88D00ED8884 /* NodeTwo.swift */,
-				D03F5E1020FAB93A00ED8884 /* PeersTwo.swift */,
-				D03F5E1820FAC1D900ED8884 /* TransactionsTwo.swift */,
-				D03F5E1220FAB9BF00ED8884 /* VotesTwo.swift */,
-				D03F5E1420FABF3E00ED8884 /* WalletsTwo.swift */,
+				D03F5E0920FAA4EA00ED8884 /* Blocks.swift */,
+				D03F5E0C20FAB6CD00ED8884 /* Delegates.swift */,
+				D03F5E0E20FAB88D00ED8884 /* Node.swift */,
+				D03F5E1020FAB93A00ED8884 /* Peers.swift */,
+				D03F5E1820FAC1D900ED8884 /* Transactions.swift */,
+				D03F5E1220FAB9BF00ED8884 /* Votes.swift */,
+				D03F5E1420FABF3E00ED8884 /* Wallets.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -447,14 +443,13 @@
 				D03F5E8B2105056100ED8884 /* ArkError.swift in Sources */,
 				D03F5E8D2105056100ED8884 /* ConnectionManager.swift in Sources */,
 				D03F5E8C2105056100ED8884 /* Connection.swift in Sources */,
-				D03F5E9D210505B100ED8884 /* VotesTwo.swift in Sources */,
-				D03F5E97210505B100ED8884 /* Two.swift in Sources */,
-				D03F5E9A210505B100ED8884 /* NodeTwo.swift in Sources */,
-				D03F5E9E210505B100ED8884 /* WalletsTwo.swift in Sources */,
-				D03F5E9C210505B100ED8884 /* TransactionsTwo.swift in Sources */,
-				D03F5E9B210505B100ED8884 /* PeersTwo.swift in Sources */,
-				D03F5E99210505B100ED8884 /* DelegatesTwo.swift in Sources */,
-				D03F5E98210505B100ED8884 /* BlocksTwo.swift in Sources */,
+				D03F5E9D210505B100ED8884 /* Votes.swift in Sources */,
+				D03F5E9A210505B100ED8884 /* Node.swift in Sources */,
+				D03F5E9E210505B100ED8884 /* Wallets.swift in Sources */,
+				D03F5E9C210505B100ED8884 /* Transactions.swift in Sources */,
+				D03F5E9B210505B100ED8884 /* Peers.swift in Sources */,
+				D03F5E99210505B100ED8884 /* Delegates.swift in Sources */,
+				D03F5E98210505B100ED8884 /* Blocks.swift in Sources */,
 				D03F5E8E2105056100ED8884 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,18 +474,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03F5E1520FABF3E00ED8884 /* WalletsTwo.swift in Sources */,
-				D03F5E1320FAB9BF00ED8884 /* VotesTwo.swift in Sources */,
-				D03F5E0A20FAA4EA00ED8884 /* BlocksTwo.swift in Sources */,
+				D03F5E1520FABF3E00ED8884 /* Wallets.swift in Sources */,
+				D03F5E1320FAB9BF00ED8884 /* Votes.swift in Sources */,
+				D03F5E0A20FAA4EA00ED8884 /* Blocks.swift in Sources */,
 				D0DE448720F53A8E00079494 /* Connection.swift in Sources */,
 				D03F5E652103B04500ED8884 /* ConnectionManager.swift in Sources */,
-				D03F5E1920FAC1D900ED8884 /* TransactionsTwo.swift in Sources */,
-				D03F5E1120FAB93A00ED8884 /* PeersTwo.swift in Sources */,
+				D03F5E1920FAC1D900ED8884 /* Transactions.swift in Sources */,
+				D03F5E1120FAB93A00ED8884 /* Peers.swift in Sources */,
 				D03F5DF220F908FC00ED8884 /* Util.swift in Sources */,
-				D03F5E0620FA9A4000ED8884 /* Two.swift in Sources */,
 				D0DE448D20F6941900079494 /* ArkError.swift in Sources */,
-				D03F5E0F20FAB88D00ED8884 /* NodeTwo.swift in Sources */,
-				D03F5E0D20FAB6CD00ED8884 /* DelegatesTwo.swift in Sources */,
+				D03F5E0F20FAB88D00ED8884 /* Node.swift in Sources */,
+				D03F5E0D20FAB6CD00ED8884 /* Delegates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
