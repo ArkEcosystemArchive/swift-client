@@ -16,13 +16,13 @@
 		D03F5E1520FABF3E00ED8884 /* Wallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* Wallets.swift */; };
 		D03F5E1920FAC1D900ED8884 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* Transactions.swift */; };
 		D03F5E2020FBE5BA00ED8884 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */; };
-		D03F5E31210141A100ED8884 /* BlocksTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */; };
-		D03F5E3321014A6C00ED8884 /* DelegatesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */; };
-		D03F5E352101504D00ED8884 /* NodeTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E342101504D00ED8884 /* NodeTwoTest.swift */; };
-		D03F5E372101512800ED8884 /* PeersTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E362101512800ED8884 /* PeersTwoTest.swift */; };
-		D03F5E39210151E200ED8884 /* VotesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E38210151E200ED8884 /* VotesTwoTest.swift */; };
-		D03F5E3B2101551600ED8884 /* WalletsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3A2101551600ED8884 /* WalletsTwoTest.swift */; };
-		D03F5E3D2101575500ED8884 /* TransactionsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */; };
+		D03F5E31210141A100ED8884 /* BlocksTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E30210141A100ED8884 /* BlocksTest.swift */; };
+		D03F5E3321014A6C00ED8884 /* DelegatesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3221014A6C00ED8884 /* DelegatesTest.swift */; };
+		D03F5E352101504D00ED8884 /* NodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E342101504D00ED8884 /* NodeTest.swift */; };
+		D03F5E372101512800ED8884 /* PeersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E362101512800ED8884 /* PeersTest.swift */; };
+		D03F5E39210151E200ED8884 /* VotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E38210151E200ED8884 /* VotesTest.swift */; };
+		D03F5E3B2101551600ED8884 /* WalletsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3A2101551600ED8884 /* WalletsTest.swift */; };
+		D03F5E3D2101575500ED8884 /* TransactionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3C2101575500ED8884 /* TransactionsTest.swift */; };
 		D03F5E652103B04500ED8884 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E642103B04500ED8884 /* ConnectionManager.swift */; };
 		D03F5E672103B97A00ED8884 /* ConnectionManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */; };
 		D03F5E762104BC9400ED8884 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F5E6D2104BC9300ED8884 /* Client.framework */; };
@@ -38,13 +38,13 @@
 		D03F5E9C210505B100ED8884 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1820FAC1D900ED8884 /* Transactions.swift */; };
 		D03F5E9D210505B100ED8884 /* Votes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1220FAB9BF00ED8884 /* Votes.swift */; };
 		D03F5E9E210505B100ED8884 /* Wallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1420FABF3E00ED8884 /* Wallets.swift */; };
-		D03F5EA6210505CE00ED8884 /* BlocksTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */; };
-		D03F5EA7210505CE00ED8884 /* DelegatesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */; };
-		D03F5EA8210505CE00ED8884 /* NodeTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E342101504D00ED8884 /* NodeTwoTest.swift */; };
-		D03F5EA9210505CE00ED8884 /* PeersTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E362101512800ED8884 /* PeersTwoTest.swift */; };
-		D03F5EAA210505CE00ED8884 /* TransactionsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */; };
-		D03F5EAB210505CE00ED8884 /* VotesTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E38210151E200ED8884 /* VotesTwoTest.swift */; };
-		D03F5EAC210505CE00ED8884 /* WalletsTwoTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3A2101551600ED8884 /* WalletsTwoTest.swift */; };
+		D03F5EA6210505CE00ED8884 /* BlocksTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E30210141A100ED8884 /* BlocksTest.swift */; };
+		D03F5EA7210505CE00ED8884 /* DelegatesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3221014A6C00ED8884 /* DelegatesTest.swift */; };
+		D03F5EA8210505CE00ED8884 /* NodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E342101504D00ED8884 /* NodeTest.swift */; };
+		D03F5EA9210505CE00ED8884 /* PeersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E362101512800ED8884 /* PeersTest.swift */; };
+		D03F5EAA210505CE00ED8884 /* TransactionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3C2101575500ED8884 /* TransactionsTest.swift */; };
+		D03F5EAB210505CE00ED8884 /* VotesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E38210151E200ED8884 /* VotesTest.swift */; };
+		D03F5EAC210505CE00ED8884 /* WalletsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E3A2101551600ED8884 /* WalletsTest.swift */; };
 		D03F5EAD210505D400ED8884 /* ConnectionManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */; };
 		D03F5EAE210505D700ED8884 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */; };
 		D0DE446E20F52ADF00079494 /* Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DE446420F52ADF00079494 /* Client.framework */; };
@@ -96,13 +96,13 @@
 		D03F5E1420FABF3E00ED8884 /* Wallets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallets.swift; sourceTree = "<group>"; };
 		D03F5E1820FAC1D900ED8884 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		D03F5E1F20FBE5BA00ED8884 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
-		D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTwoTest.swift; sourceTree = "<group>"; };
-		D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesTwoTest.swift; sourceTree = "<group>"; };
-		D03F5E342101504D00ED8884 /* NodeTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTwoTest.swift; sourceTree = "<group>"; };
-		D03F5E362101512800ED8884 /* PeersTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersTwoTest.swift; sourceTree = "<group>"; };
-		D03F5E38210151E200ED8884 /* VotesTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotesTwoTest.swift; sourceTree = "<group>"; };
-		D03F5E3A2101551600ED8884 /* WalletsTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTwoTest.swift; sourceTree = "<group>"; };
-		D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTwoTest.swift; sourceTree = "<group>"; };
+		D03F5E30210141A100ED8884 /* BlocksTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksTest.swift; sourceTree = "<group>"; };
+		D03F5E3221014A6C00ED8884 /* DelegatesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesTest.swift; sourceTree = "<group>"; };
+		D03F5E342101504D00ED8884 /* NodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTest.swift; sourceTree = "<group>"; };
+		D03F5E362101512800ED8884 /* PeersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersTest.swift; sourceTree = "<group>"; };
+		D03F5E38210151E200ED8884 /* VotesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotesTest.swift; sourceTree = "<group>"; };
+		D03F5E3A2101551600ED8884 /* WalletsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsTest.swift; sourceTree = "<group>"; };
+		D03F5E3C2101575500ED8884 /* TransactionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTest.swift; sourceTree = "<group>"; };
 		D03F5E642103B04500ED8884 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		D03F5E662103B97A00ED8884 /* ConnectionManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerTest.swift; sourceTree = "<group>"; };
 		D03F5E6D2104BC9300ED8884 /* Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,13 +166,13 @@
 		D0C1638121C19D01005F3CD0 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				D03F5E30210141A100ED8884 /* BlocksTwoTest.swift */,
-				D03F5E3221014A6C00ED8884 /* DelegatesTwoTest.swift */,
-				D03F5E342101504D00ED8884 /* NodeTwoTest.swift */,
-				D03F5E362101512800ED8884 /* PeersTwoTest.swift */,
-				D03F5E3C2101575500ED8884 /* TransactionsTwoTest.swift */,
-				D03F5E38210151E200ED8884 /* VotesTwoTest.swift */,
-				D03F5E3A2101551600ED8884 /* WalletsTwoTest.swift */,
+				D03F5E30210141A100ED8884 /* BlocksTest.swift */,
+				D03F5E3221014A6C00ED8884 /* DelegatesTest.swift */,
+				D03F5E342101504D00ED8884 /* NodeTest.swift */,
+				D03F5E362101512800ED8884 /* PeersTest.swift */,
+				D03F5E3C2101575500ED8884 /* TransactionsTest.swift */,
+				D03F5E38210151E200ED8884 /* VotesTest.swift */,
+				D03F5E3A2101551600ED8884 /* WalletsTest.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -459,13 +459,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F5EAD210505D400ED8884 /* ConnectionManagerTest.swift in Sources */,
-				D03F5EA8210505CE00ED8884 /* NodeTwoTest.swift in Sources */,
-				D03F5EA6210505CE00ED8884 /* BlocksTwoTest.swift in Sources */,
-				D03F5EA9210505CE00ED8884 /* PeersTwoTest.swift in Sources */,
-				D03F5EA7210505CE00ED8884 /* DelegatesTwoTest.swift in Sources */,
-				D03F5EAC210505CE00ED8884 /* WalletsTwoTest.swift in Sources */,
-				D03F5EAA210505CE00ED8884 /* TransactionsTwoTest.swift in Sources */,
-				D03F5EAB210505CE00ED8884 /* VotesTwoTest.swift in Sources */,
+				D03F5EA8210505CE00ED8884 /* NodeTest.swift in Sources */,
+				D03F5EA6210505CE00ED8884 /* BlocksTest.swift in Sources */,
+				D03F5EA9210505CE00ED8884 /* PeersTest.swift in Sources */,
+				D03F5EA7210505CE00ED8884 /* DelegatesTest.swift in Sources */,
+				D03F5EAC210505CE00ED8884 /* WalletsTest.swift in Sources */,
+				D03F5EAA210505CE00ED8884 /* TransactionsTest.swift in Sources */,
+				D03F5EAB210505CE00ED8884 /* VotesTest.swift in Sources */,
 				D03F5EAE210505D700ED8884 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,14 +493,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F5E672103B97A00ED8884 /* ConnectionManagerTest.swift in Sources */,
-				D03F5E3D2101575500ED8884 /* TransactionsTwoTest.swift in Sources */,
-				D03F5E3321014A6C00ED8884 /* DelegatesTwoTest.swift in Sources */,
+				D03F5E3D2101575500ED8884 /* TransactionsTest.swift in Sources */,
+				D03F5E3321014A6C00ED8884 /* DelegatesTest.swift in Sources */,
 				D03F5E2020FBE5BA00ED8884 /* TestHelpers.swift in Sources */,
-				D03F5E352101504D00ED8884 /* NodeTwoTest.swift in Sources */,
-				D03F5E31210141A100ED8884 /* BlocksTwoTest.swift in Sources */,
-				D03F5E372101512800ED8884 /* PeersTwoTest.swift in Sources */,
-				D03F5E3B2101551600ED8884 /* WalletsTwoTest.swift in Sources */,
-				D03F5E39210151E200ED8884 /* VotesTwoTest.swift in Sources */,
+				D03F5E352101504D00ED8884 /* NodeTest.swift in Sources */,
+				D03F5E31210141A100ED8884 /* BlocksTest.swift in Sources */,
+				D03F5E372101512800ED8884 /* PeersTest.swift in Sources */,
+				D03F5E3B2101551600ED8884 /* WalletsTest.swift in Sources */,
+				D03F5E39210151E200ED8884 /* VotesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

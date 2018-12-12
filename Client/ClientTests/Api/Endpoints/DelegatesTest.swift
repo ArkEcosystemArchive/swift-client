@@ -11,9 +11,9 @@ import Foundation
 import XCTest
 @testable import Client
 
-class DelegatesTwoTest: XCTestCase {
+class DelegatesTest: XCTestCase {
 
-    private var delegates: Two.Delegates?
+    private var delegates: Delegates?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
         return "\(apiHost)/delegates"
@@ -21,8 +21,8 @@ class DelegatesTwoTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let connection = Connection(host: apiHost, version: 2)
-        delegates = Two.Delegates(connection: connection, mockHandleApiGet)
+        let connection = Connection(host: apiHost)
+        delegates = Delegates(connection: connection, mockHandleApiGet)
     }
 
     func testDelegatesGetName() {

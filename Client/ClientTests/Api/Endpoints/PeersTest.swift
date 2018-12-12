@@ -11,38 +11,38 @@ import Foundation
 import XCTest
 @testable import Client
 
-class VotesTwoTest: XCTestCase {
+class PeersTest: XCTestCase {
 
-    private var votes: Two.Votes?
+    private var peers: Peers?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
-        return "\(apiHost)/votes"
+        return "\(apiHost)/peers"
     }
 
     override func setUp() {
         super.setUp()
-        let connection = Connection(host: apiHost, version: 2)
-        votes = Two.Votes(connection: connection, mockHandleApiGet)
+        let connection = Connection(host: apiHost)
+        peers = Peers(connection: connection, mockHandleApiGet)
     }
 
-    func testVotesStatus() {
-        let expectation = self.expectation(description: "Get a vote")
+    func testPeersStatus() {
+        let expectation = self.expectation(description: "Get peer status")
         var response: [String: Any]?
-        votes?.get(id: "dummyId", completionHandler: { (res) in
+        peers?.status(ip: "0.0.0.0", completionHandler: { (res) in
             response = res
             expectation.fulfill()
         })
         waitForExpectations(timeout: 5, handler: nil)
 
         let parameters = response!["parameters"] as! [String: Any]?
-        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyId" )
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/0.0.0.0" )
         XCTAssert(parameters?.count == 0)
     }
 
-    func testVotesAll() {
-        let expectation = self.expectation(description: "Get all votes")
+    func testPeersAll() {
+        let expectation = self.expectation(description: "Get all peers")
         var response: [String: Any]?
-        votes?.all(completionHandler: { (res) in
+        peers?.all(completionHandler: { (res) in
             response = res
             expectation.fulfill()
         })

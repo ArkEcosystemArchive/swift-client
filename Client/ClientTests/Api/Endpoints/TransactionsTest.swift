@@ -11,9 +11,9 @@ import Foundation
 import XCTest
 @testable import Client
 
-class TransactionsTwoTest: XCTestCase {
+class TransactionsTest: XCTestCase {
 
-    private var transactions: Two.Transactions?
+    private var transactions: Transactions?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
         return "\(apiHost)/transactions"
@@ -21,8 +21,8 @@ class TransactionsTwoTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let connection = Connection(host: apiHost, version: 2)
-        transactions = Two.Transactions(connection: connection, mockHandleApiGet, mockHandleApiPost)
+        let connection = Connection(host: apiHost)
+        transactions = Transactions(connection: connection, mockHandleApiGet, mockHandleApiPost)
     }
 
     func testTransactionsCreate() {

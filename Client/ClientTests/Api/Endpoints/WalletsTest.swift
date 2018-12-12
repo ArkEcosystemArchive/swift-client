@@ -11,9 +11,9 @@ import Foundation
 import XCTest
 @testable import Client
 
-class WalletsTwoTest: XCTestCase {
+class WalletsTest: XCTestCase {
 
-    private var wallets: Two.Wallets?
+    private var wallets: Wallets?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
         return "\(apiHost)/wallets"
@@ -21,8 +21,8 @@ class WalletsTwoTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let connection = Connection(host: apiHost, version: 2)
-        wallets = Two.Wallets(connection: connection, mockHandleApiGet, mockHandleApiPost)
+        let connection = Connection(host: apiHost)
+        wallets = Wallets(connection: connection, mockHandleApiGet, mockHandleApiPost)
     }
 
     func testWalletsGetName() {
