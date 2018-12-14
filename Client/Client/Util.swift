@@ -13,7 +13,8 @@ import Foundation
 /// Set headers for the requests
 let headers: HTTPHeaders = [
     "Content-Type": "application/json",
-    "User-Agent": "ark-swift-client (https://github.com/ArkEcosystem/swift-client)"
+    "User-Agent": "ark-swift-client (https://github.com/ArkEcosystem/swift-client)",
+    "API-Version": "2"
 ]
 public typealias HTTPHeaders = [String: String]
 

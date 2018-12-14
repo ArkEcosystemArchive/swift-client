@@ -23,8 +23,8 @@ class ConnectionmanagerTest: XCTestCase {
     }
 
     func testConnectDisconnect() {
-        let mainConn = Connection(host: mainHost, version: 1)
-        let devConn = Connection(host: devHost, version: 2)
+        let mainConn = Connection(host: mainHost)
+        let devConn = Connection(host: devHost)
         manager?.connect(to: mainConn, withName: "main")
         XCTAssertEqual(manager?.getConnections().count, 1)
 
@@ -41,7 +41,7 @@ class ConnectionmanagerTest: XCTestCase {
     }
 
     func testConnection() {
-        let mainConn = Connection(host: mainHost, version: 1)
+        let mainConn = Connection(host: mainHost)
         manager?.connect(to: mainConn, withName: "main")
         XCTAssertNoThrow(try manager?.connection())
         XCTAssertNoThrow(try manager?.connection("main"))

@@ -11,9 +11,9 @@ import Foundation
 import XCTest
 @testable import Client
 
-class NodeTwoTest: XCTestCase {
+class NodeTest: XCTestCase {
 
-    private var node: Two.Node?
+    private var node: Node?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
         return "\(apiHost)/node"
@@ -21,8 +21,8 @@ class NodeTwoTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let connection = Connection(host: apiHost, version: 2)
-        node = Two.Node(connection: connection, mockHandleApiGet)
+        let connection = Connection(host: apiHost)
+        node = Node(connection: connection, mockHandleApiGet)
     }
 
     func testNodeStatus() {

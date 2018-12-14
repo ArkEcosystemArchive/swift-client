@@ -11,9 +11,9 @@ import Foundation
 import XCTest
 @testable import Client
 
-class BlocksTwoTest: XCTestCase {
+class BlocksTest: XCTestCase {
 
-    private var blocks: Two.Blocks?
+    private var blocks: Blocks?
     private let apiHost = "https://127.0.0.1:4003/api"
     private var apiEndpoint: String {
         return "\(apiHost)/blocks"
@@ -21,8 +21,8 @@ class BlocksTwoTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        let connection = Connection(host: apiHost, version: 2)
-        blocks = Two.Blocks(connection: connection, mockHandleApiGet, mockHandleApiPost)
+        let connection = Connection(host: apiHost)
+        blocks = Blocks(connection: connection, mockHandleApiGet, mockHandleApiPost)
     }
 
     func testBlocksGet() {
