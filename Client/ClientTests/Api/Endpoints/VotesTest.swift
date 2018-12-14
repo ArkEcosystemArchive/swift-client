@@ -50,7 +50,7 @@ class VotesTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == self.apiEndpoint)
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 

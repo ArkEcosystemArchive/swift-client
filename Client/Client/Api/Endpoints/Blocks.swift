@@ -30,17 +30,17 @@ public class Blocks {
     }
 
     /// Retrieves all blocks
-    public func all(limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func all(limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler(endpoint, ["limit": limit, "page": page], completionHandler)
     }
 
     /// Retrieves transactions for a given block
-    public func transactions(ofBlock id: String, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func transactions(ofBlock id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/\(id)/transactions", ["limit": limit, "page": page], completionHandler)
     }
 
     /// Searches for a block
-    public func search(body: [String: Any]?, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func search(body: [String: Any]?, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiPostHandler("\(endpoint)/search", ["limit": limit, "page": page], body, completionHandler)
     }
 }

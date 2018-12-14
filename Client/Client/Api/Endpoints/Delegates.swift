@@ -37,33 +37,33 @@ public class Delegates {
     }
 
     /// Retrieves all delegates
-    public func all(limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func all(limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler(endpoint, ["limit": limit, "page": page], completionHandler)
     }
 
     /// Retrieves all forged blocks of a given delegate
-    public func blocks(byName id: String, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func blocks(byName id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/\(id)/blocks", ["limit": limit, "page": page], completionHandler)
     }
 
-    public func blocks(byAddress id: String, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func blocks(byAddress id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/\(id)/blocks", ["limit": limit, "page": page], completionHandler)
     }
 
-    public func blocks(byKey id: String, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func blocks(byKey id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/\(id)/blocks", ["limit": limit, "page": page], completionHandler)
     }
 
     /// Retrieves all voters of a given delegate
-    public func voters(byName id: String, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func voters(byName id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/\(id)/voters", ["limit": limit, "page": page], completionHandler)
     }
 
-    public func voters(byAddress id: String, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func voters(byAddress id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/\(id)/voters", ["limit": limit, "page": page], completionHandler)
     }
 
-    public func voters(byKey id: String, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func voters(byKey id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/\(id)/voters", ["limit": limit, "page": page], completionHandler)
     }
 }

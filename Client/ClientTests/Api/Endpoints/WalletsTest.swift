@@ -93,7 +93,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/top" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -108,7 +108,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletName/transactions" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -123,7 +123,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletAddress/transactions" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -138,7 +138,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletKey/transactions" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -153,7 +153,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletName/transactions/sent" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -168,7 +168,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletAddress/transactions/sent" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -183,7 +183,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletKey/transactions/sent" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -198,7 +198,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletName/transactions/received" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -213,7 +213,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletAddress/transactions/received" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -228,7 +228,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletKey/transactions/received" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -243,7 +243,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletName/votes" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -258,7 +258,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletAddress/votes" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -273,7 +273,7 @@ class WalletsTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletKey/votes" )
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -289,7 +289,7 @@ class WalletsTest: XCTestCase {
         let parameters = response!["parameters"] as! [String: Any]?
         let body = response!["body"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/search")
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
         XCTAssert(body!["balance"] as! Int == 100000000)
     }
