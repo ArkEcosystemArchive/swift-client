@@ -28,7 +28,7 @@ public class Votes {
     }
 
     /// Retrieves all votes
-    public func all(limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func all(limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler(endpoint, ["limit": limit, "page": page], completionHandler)
     }
 }

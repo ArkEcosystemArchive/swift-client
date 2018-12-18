@@ -125,7 +125,7 @@ class TransactionsTest: XCTestCase {
         let parameters = response!["parameters"] as! [String: Any]?
         let body = response!["body"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/search")
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
         XCTAssert(body!["amount"] as! Int == 100000000)
     }

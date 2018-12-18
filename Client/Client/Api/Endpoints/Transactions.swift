@@ -40,12 +40,12 @@ public class Transactions {
     }
 
     /// Retrieves all transactions
-    public func all(limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func all(limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler(endpoint, ["limit": limit, "page": page], completionHandler)
     }
 
     /// Retrieves all unconfirmed transactions
-    public func allUnconfirmed(limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func allUnconfirmed(limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/unconfirmed", ["limit": limit, "page": page], completionHandler)
     }
 
@@ -55,7 +55,7 @@ public class Transactions {
     }
 
     /// Searches for a transaction
-    public func search(body: [String: Any]?, limit: Int = 20, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+    public func search(body: [String: Any]?, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiPostHandler("\(endpoint)/search", ["limit": limit, "page": page], body, completionHandler)
     }
 }

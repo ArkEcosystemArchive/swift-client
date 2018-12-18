@@ -93,7 +93,7 @@ class DelegatesTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyDelegateName/blocks")
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -108,7 +108,7 @@ class DelegatesTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyDelegateAddress/blocks")
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -123,7 +123,7 @@ class DelegatesTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyDelegateKey/blocks")
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -138,7 +138,7 @@ class DelegatesTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyDelegateName/voters")
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -153,7 +153,7 @@ class DelegatesTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyDelegateKey/voters")
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
@@ -168,7 +168,7 @@ class DelegatesTest: XCTestCase {
 
         let parameters = response!["parameters"] as! [String: Any]?
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyDelegateKey/voters")
-        XCTAssert(parameters!["limit"] as! Int == 20)
+        XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
