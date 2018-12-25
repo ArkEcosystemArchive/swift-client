@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 
 - JSON encode the body of the POST requests
+- Remove redundant v1 endpoint tests
 
 ## 1.0.0 - 2018-12-18
 
