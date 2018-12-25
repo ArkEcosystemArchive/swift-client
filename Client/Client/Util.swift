@@ -50,7 +50,7 @@ public func handleApiPost(_ url: String, _ parameters: [String: Any]?, _ body: [
         }
         urlComponents.queryItems = queryItems
     }
-    Alamofire.request(urlComponents, method: .post, parameters: body, headers: headers).responseJSON { (response) in
+    Alamofire.request(urlComponents, method: .post, parameters: body, encoding: JSONEncoding(options: []), headers: headers).responseJSON { (response) in
         if let json = response.result.value {
             completionHandler(json as? [String: Any])
         } else {
