@@ -7,12 +7,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
-### 1.0.0 - 2018-12-18
+## 1.0.1 - 2018-12-25
+
+### Changed
+
+- JSON encode the body of the POST requests
+
+## 1.0.0 - 2018-12-18
 
 ### Removed
 
 - 1.0 API Support
 
-### 0.1.0 - 2018-12-09
+## 0.1.0 - 2018-12-09
 
 - initial release
