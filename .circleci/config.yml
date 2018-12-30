@@ -13,10 +13,10 @@ jobs:
             brew outdated carthage || brew upgrade carthage
       - run:
           name: Navigate to correct folder
-          command: cd Client && carthage bootstrap --cache-builds
+          command: cd Client && carthage bootstrap --cache-builds  --platform Mac
       - run:
           name: Build and run tests
-          command: set -o pipefail && xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO
+          command: cd Client && set -o pipefail && xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO
       - run:
           name: Codecov
           when: on_success
