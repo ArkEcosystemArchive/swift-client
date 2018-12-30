@@ -1,6 +1,16 @@
 version: 2
 jobs:
-  build:
+  swiftlint:
+    docker:
+      - image: dantoml/swiftlint:latest
+    steps:
+      - checkout
+      - run: cd Client && swiftlint lint --reporter junit | tee result.xml
+      - store_artifacts:
+          path: result.xml
+      - store_test_results:
+          path: result.xml
+  build-and-test:
     macos:
       xcode: "10.1.0"
     working_directory: ~/arkecosystem/client
@@ -21,3 +31,10 @@ jobs:
           name: Codecov
           when: on_success
           command: bash <(curl -s https://codecov.io/bash)
+
+workflows:
+  version: 2
+  lint-build-test:
+    jobs:
+      - swiftlint
+      - build-and-test
