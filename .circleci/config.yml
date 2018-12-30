@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     macos:
-      xcode: "10.1"
+      xcode: "10.1.0"
     working_directory: ~/arkecosystem/client
     steps:
       - checkout
