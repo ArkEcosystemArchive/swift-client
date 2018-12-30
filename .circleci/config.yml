@@ -11,7 +11,6 @@ jobs:
           command: |
             brew install carthage || true
             brew outdated carthage || brew upgrade carthage
-            sudo gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
       - run:
           name: Install SwiftLint
           command: wget --output-document /tmp/SwiftLint.pkg https://github.com/realm/SwiftLint/releases/download/0.26.0/SwiftLint.pkg && sudo installer -pkg /tmp/SwiftLint.pkg -target /
