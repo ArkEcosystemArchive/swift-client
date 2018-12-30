@@ -12,14 +12,11 @@ jobs:
             brew install carthage || true
             brew outdated carthage || brew upgrade carthage
       - run:
-          name: Install SwiftLint
-          command: wget --output-document /tmp/SwiftLint.pkg https://github.com/realm/SwiftLint/releases/download/0.26.0/SwiftLint.pkg && sudo installer -pkg /tmp/SwiftLint.pkg -target /
-      - run:
           name: Navigate to correct folder
           command: cd Client && carthage bootstrap --cache-builds
       - run:
           name: Build and run tests
-          command: set -o pipefail && xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
+          command: set -o pipefail && xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO
       - run:
           name: Codecov
           when: on_success
