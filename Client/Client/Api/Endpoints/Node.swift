@@ -36,7 +36,7 @@ public class Node {
     public func configuration(completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/configuration", [:], completionHandler)
     }
-    
+
     /// Retrieves the configuration
     public func fees(completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/fees", [:], completionHandler)
