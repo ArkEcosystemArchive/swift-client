@@ -67,4 +67,18 @@ class NodeTest: XCTestCase {
         XCTAssert(parameters?.count == 0)
     }
 
+    func testNodeCrypto() {
+        let expectation = self.expectation(description: "Get node crypto configuration")
+        var response: [String: Any]?
+        node?.crypto(completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 5, handler: nil)
+
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/configuration/crypto" )
+        XCTAssert(parameters?.count == 0)
+    }
+
 }
