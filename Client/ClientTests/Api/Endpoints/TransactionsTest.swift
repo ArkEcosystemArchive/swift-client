@@ -113,6 +113,20 @@ class TransactionsTest: XCTestCase {
         XCTAssert(parameters?.count == 0)
     }
 
+    func testTransactionsFees() {
+        let expectation = self.expectation(description: "Get transaction fees")
+        var response: [String: Any]?
+        transactions?.fees(completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 5, handler: nil)
+
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/fees")
+        XCTAssert(parameters?.count == 0)
+    }
+
     func testTransactionsSearch() {
         let expectation = self.expectation(description: "Search a transaction")
         var response: [String: Any]?
