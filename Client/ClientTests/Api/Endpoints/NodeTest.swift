@@ -81,4 +81,18 @@ class NodeTest: XCTestCase {
         XCTAssert(parameters?.count == 0)
     }
 
+    func testNodeFees() {
+        let expectation = self.expectation(description: "Get node fee statistics")
+        var response: [String: Any]?
+        node?.fees(completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 5, handler: nil)
+
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/fees" )
+        XCTAssert(parameters?.count == 0)
+    }
+
 }

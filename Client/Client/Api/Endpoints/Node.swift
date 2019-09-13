@@ -42,8 +42,8 @@ public class Node {
         apiGetHandler("\(endpoint)/configuration/crypto", [:], completionHandler)
     }
 
-    /// Retrieves the fees
-    public func fees(completionHandler: @escaping ([String: Any]?) -> Void) {
-        apiGetHandler("\(endpoint)/fees", [:], completionHandler)
+    /// Retrieves the fee statistics
+    public func fees(completionHandler: @escaping ([String: Any]?) -> Void, days: Int? = nil) {
+        apiGetHandler("\(endpoint)/fees", ["days": days], completionHandler)
     }
 }
