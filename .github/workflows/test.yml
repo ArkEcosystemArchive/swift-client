@@ -1,0 +1,20 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+    build:
+        runs-on: macOS-latest
+
+        steps:
+            - uses: actions/checkout@v1
+            - name: Install prerequisits
+              run: |
+                  brew install carthage || true
+                  brew outdated carthage || brew upgrade carthage
+            - name: Navigate to correct folder
+              run: cd Client && carthage bootstrap --cache-builds  --platform Mac
+            - name: Build and run tests
+              run: cd Client && set -o pipefail && xcodebuild clean test -project Client.xcodeproj -scheme ClientTests CODE_SIGNING_REQUIRED=NO
+            - name: Codecov
+              run: bash <(curl -s https://codecov.io/bash) -t ${{ secrets.CODECOV_TOKEN }}
