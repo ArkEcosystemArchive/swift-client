@@ -44,6 +44,10 @@ public class Node {
 
     /// Retrieves the fee statistics
     public func fees(completionHandler: @escaping ([String: Any]?) -> Void, days: Int? = nil) {
-        apiGetHandler("\(endpoint)/fees", ["days": days], completionHandler)
+        var params: [String:Int] = [:]
+        if days != nil {
+            params["days"] = days
+        }
+        apiGetHandler("\(endpoint)/fees", params, completionHandler)
     }
 }
