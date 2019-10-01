@@ -54,6 +54,11 @@ public class Transactions {
         apiGetHandler("\(endpoint)/types", [:], completionHandler)
     }
 
+    /// Retrieves the static transaction fees
+    public func fees(completionHandler: @escaping ([String: Any]?) -> Void) {
+        apiGetHandler("\(endpoint)/fees", [:], completionHandler)
+    }
+
     /// Searches for a transaction
     public func search(body: [String: Any]?, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiPostHandler("\(endpoint)/search", ["limit": limit, "page": page], body, completionHandler)
