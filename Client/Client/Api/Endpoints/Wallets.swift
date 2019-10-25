@@ -48,6 +48,19 @@ public class Wallets {
         apiGetHandler("\(endpoint)/top", ["limit": limit, "page": page], completionHandler)
     }
 
+    /// Retrieves all locks of a given wallet
+    public func locks(byName id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+        apiGetHandler("\(endpoint)/\(id)/locks", ["limit": limit, "page": page], completionHandler)
+    }
+
+    public func locks(byAddress id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+        apiGetHandler("\(endpoint)/\(id)/locks", ["limit": limit, "page": page], completionHandler)
+    }
+
+    public func locks(byKey id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
+        apiGetHandler("\(endpoint)/\(id)/locks", ["limit": limit, "page": page], completionHandler)
+    }
+
     /// Retrieves all transactions of a given wallet
     public func transactions(byName id: String, limit: Int = 100, page: Int = 1, completionHandler: @escaping ([String: Any]?) -> Void) {
         apiGetHandler("\(endpoint)/\(id)/transactions", ["limit": limit, "page": page], completionHandler)
