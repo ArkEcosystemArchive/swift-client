@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA1CA73236839840079AB94 /* BusinessesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1CA6F236839840079AB94 /* BusinessesTest.swift */; };
+		2CA1CA74236839840079AB94 /* BridgechainsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1CA70236839840079AB94 /* BridgechainsTest.swift */; };
+		2CA1CA75236839840079AB94 /* LocksTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1CA71236839840079AB94 /* LocksTest.swift */; };
+		2CA1CA76236839840079AB94 /* RoundsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1CA72236839840079AB94 /* RoundsTest.swift */; };
+		2CA1CA7B236839910079AB94 /* Bridgechains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1CA77236839910079AB94 /* Bridgechains.swift */; };
+		2CA1CA7C236839910079AB94 /* Businesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1CA78236839910079AB94 /* Businesses.swift */; };
+		2CA1CA7D236839910079AB94 /* Locks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1CA79236839910079AB94 /* Locks.swift */; };
+		2CA1CA7E236839910079AB94 /* Rounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA1CA7A236839910079AB94 /* Rounds.swift */; };
 		D03F5DF220F908FC00ED8884 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5DF120F908FC00ED8884 /* Util.swift */; };
 		D03F5E0A20FAA4EA00ED8884 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0920FAA4EA00ED8884 /* Blocks.swift */; };
 		D03F5E0D20FAB6CD00ED8884 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03F5E0C20FAB6CD00ED8884 /* Delegates.swift */; };
@@ -87,6 +95,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2CA1CA6F236839840079AB94 /* BusinessesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessesTest.swift; sourceTree = "<group>"; };
+		2CA1CA70236839840079AB94 /* BridgechainsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgechainsTest.swift; sourceTree = "<group>"; };
+		2CA1CA71236839840079AB94 /* LocksTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocksTest.swift; sourceTree = "<group>"; };
+		2CA1CA72236839840079AB94 /* RoundsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundsTest.swift; sourceTree = "<group>"; };
+		2CA1CA77236839910079AB94 /* Bridgechains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bridgechains.swift; sourceTree = "<group>"; };
+		2CA1CA78236839910079AB94 /* Businesses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Businesses.swift; sourceTree = "<group>"; };
+		2CA1CA79236839910079AB94 /* Locks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locks.swift; sourceTree = "<group>"; };
+		2CA1CA7A236839910079AB94 /* Rounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rounds.swift; sourceTree = "<group>"; };
 		D03F5DF120F908FC00ED8884 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		D03F5E0920FAA4EA00ED8884 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		D03F5E0C20FAB6CD00ED8884 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
@@ -167,6 +183,10 @@
 			isa = PBXGroup;
 			children = (
 				D03F5E30210141A100ED8884 /* BlocksTest.swift */,
+				2CA1CA70236839840079AB94 /* BridgechainsTest.swift */,
+				2CA1CA6F236839840079AB94 /* BusinessesTest.swift */,
+				2CA1CA71236839840079AB94 /* LocksTest.swift */,
+				2CA1CA72236839840079AB94 /* RoundsTest.swift */,
 				D03F5E3221014A6C00ED8884 /* DelegatesTest.swift */,
 				D03F5E342101504D00ED8884 /* NodeTest.swift */,
 				D03F5E362101512800ED8884 /* PeersTest.swift */,
@@ -183,6 +203,10 @@
 				D03F5E0920FAA4EA00ED8884 /* Blocks.swift */,
 				D03F5E0C20FAB6CD00ED8884 /* Delegates.swift */,
 				D03F5E0E20FAB88D00ED8884 /* Node.swift */,
+				2CA1CA77236839910079AB94 /* Bridgechains.swift */,
+				2CA1CA78236839910079AB94 /* Businesses.swift */,
+				2CA1CA79236839910079AB94 /* Locks.swift */,
+				2CA1CA7A236839910079AB94 /* Rounds.swift */,
 				D03F5E1020FAB93A00ED8884 /* Peers.swift */,
 				D03F5E1820FAC1D900ED8884 /* Transactions.swift */,
 				D03F5E1220FAB9BF00ED8884 /* Votes.swift */,
@@ -474,17 +498,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA1CA7B236839910079AB94 /* Bridgechains.swift in Sources */,
 				D03F5E1520FABF3E00ED8884 /* Wallets.swift in Sources */,
+				2CA1CA7D236839910079AB94 /* Locks.swift in Sources */,
 				D03F5E1320FAB9BF00ED8884 /* Votes.swift in Sources */,
 				D03F5E0A20FAA4EA00ED8884 /* Blocks.swift in Sources */,
 				D0DE448720F53A8E00079494 /* Connection.swift in Sources */,
 				D03F5E652103B04500ED8884 /* ConnectionManager.swift in Sources */,
+				2CA1CA7C236839910079AB94 /* Businesses.swift in Sources */,
 				D03F5E1920FAC1D900ED8884 /* Transactions.swift in Sources */,
 				D03F5E1120FAB93A00ED8884 /* Peers.swift in Sources */,
 				D03F5DF220F908FC00ED8884 /* Util.swift in Sources */,
 				D0DE448D20F6941900079494 /* ArkError.swift in Sources */,
 				D03F5E0F20FAB88D00ED8884 /* Node.swift in Sources */,
 				D03F5E0D20FAB6CD00ED8884 /* Delegates.swift in Sources */,
+				2CA1CA7E236839910079AB94 /* Rounds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,13 +521,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03F5E672103B97A00ED8884 /* ConnectionManagerTest.swift in Sources */,
+				2CA1CA74236839840079AB94 /* BridgechainsTest.swift in Sources */,
+				2CA1CA73236839840079AB94 /* BusinessesTest.swift in Sources */,
 				D03F5E3D2101575500ED8884 /* TransactionsTest.swift in Sources */,
 				D03F5E3321014A6C00ED8884 /* DelegatesTest.swift in Sources */,
 				D03F5E2020FBE5BA00ED8884 /* TestHelpers.swift in Sources */,
+				2CA1CA76236839840079AB94 /* RoundsTest.swift in Sources */,
 				D03F5E352101504D00ED8884 /* NodeTest.swift in Sources */,
 				D03F5E31210141A100ED8884 /* BlocksTest.swift in Sources */,
 				D03F5E372101512800ED8884 /* PeersTest.swift in Sources */,
 				D03F5E3B2101551600ED8884 /* WalletsTest.swift in Sources */,
+				2CA1CA75236839840079AB94 /* LocksTest.swift in Sources */,
 				D03F5E39210151E200ED8884 /* VotesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

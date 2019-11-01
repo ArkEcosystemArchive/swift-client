@@ -97,6 +97,51 @@ class WalletsTest: XCTestCase {
         XCTAssert(parameters!["page"] as! Int == 1)
     }
 
+    func testWalletsLocksName() {
+        let expectation = self.expectation(description: "Get locks of wallet by name")
+        var response: [String: Any]?
+        wallets?.locks(byName: "dummyWalletName", completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 5, handler: nil)
+
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletName/locks" )
+        XCTAssert(parameters!["limit"] as! Int == 100)
+        XCTAssert(parameters!["page"] as! Int == 1)
+    }
+
+    func testWalletsLocksAddress() {
+        let expectation = self.expectation(description: "Get locks of wallet by address")
+        var response: [String: Any]?
+        wallets?.locks(byAddress: "dummyWalletAddress", completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 5, handler: nil)
+
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletAddress/locks" )
+        XCTAssert(parameters!["limit"] as! Int == 100)
+        XCTAssert(parameters!["page"] as! Int == 1)
+    }
+
+    func testWalletsLocksKey() {
+        let expectation = self.expectation(description: "Get locks of wallet by public key")
+        var response: [String: Any]?
+        wallets?.locks(byKey: "dummyWalletKey", completionHandler: { (res) in
+            response = res
+            expectation.fulfill()
+        })
+        waitForExpectations(timeout: 5, handler: nil)
+
+        let parameters = response!["parameters"] as! [String: Any]?
+        XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/dummyWalletKey/locks" )
+        XCTAssert(parameters!["limit"] as! Int == 100)
+        XCTAssert(parameters!["page"] as! Int == 1)
+    }
+
     func testWalletsTransactionsName() {
         let expectation = self.expectation(description: "Get transactions of wallet by name")
         var response: [String: Any]?
