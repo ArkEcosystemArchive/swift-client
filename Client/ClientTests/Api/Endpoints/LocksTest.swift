@@ -72,9 +72,9 @@ class LocksTest: XCTestCase {
     }
 
     func testLocksUnlocked() {
-        let expectation = self.expectation(description: "Search an unlocked lock")
+        let expectation = self.expectation(description: "Retrieve transactions for the given lock ids")
         var response: [String: Any]?
-        locks?.unlocked(body: ["expirationValue": 12345], completionHandler: { (res) in
+        locks?.unlocked(body: ["ids": ["12345"]], completionHandler: { (res) in
             response = res
             expectation.fulfill()
         })
@@ -85,7 +85,6 @@ class LocksTest: XCTestCase {
         XCTAssert(response!["url"] as! String == "\(self.apiEndpoint)/unlocked")
         XCTAssert(parameters!["limit"] as! Int == 100)
         XCTAssert(parameters!["page"] as! Int == 1)
-        XCTAssert(body!["expirationValue"] as! Int == 12345)
     }
 
 }
